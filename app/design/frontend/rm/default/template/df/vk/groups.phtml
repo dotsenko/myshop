@@ -1,0 +1,34 @@
+<?php /** @var Df_Vk_Block_Frontend_Widget_Groups $this */ ?>
+
+
+<?php
+    /** @var Df_Vk_Helper_Settings_Widget_Groups_Page $settings  */
+	$settings = $this->getSettingsForTheCurrentPage();
+?>
+
+<script type='text/javascript'>
+
+	/** @type {String} */
+	var scopeName = '<?php echo $this->getJavaScriptNameSpace(); ?>';
+
+	df.namespace(['df','vk', scopeName].join('.'));
+
+	jQuery
+		.extend (
+			df.vk[scopeName]
+			,
+			{
+				enabled: true
+				,
+				applicationId: <?php echo $this->getApplicationId(); ?>
+				,
+				position: '<?php echo $settings->getColumn(); ?>'
+				,
+				verticalOrdering: <?php echo $settings->getPosition(); ?>
+				,
+				settings: <?php echo $this->getSettingsAsJson(); ?>
+			}
+		)
+	;
+
+</script>

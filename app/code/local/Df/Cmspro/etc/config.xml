@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Cmspro>
+            <version>0.1.6</version>
+        </Df_Cmspro>
+    </modules>
+
+
+	<df>
+		<features>
+			<df-cms-1>
+				<title>Статьи [устаревший]</title>
+				<url>http://magento-forum.ru/forum/194/</url>
+			</df-cms-1>
+		</features>
+	</df>
+
+
+
+
+    <frontend>
+		<events>
+			<rm_menu_top_add_submenu>
+				<observers>
+					<df_cmspro__rm_menu_top_add_submenu>
+						<class>df_cmspro/dispatcher</class>
+						<method>rm_menu_top_add_submenu</method>
+					</df_cmspro__rm_menu_top_add_submenu>
+				</observers>
+			</rm_menu_top_add_submenu>
+		</events>
+
+        <routers>
+            <cmspro>
+                <use>standard</use>
+                <args>
+                    <module>Df_Cmspro</module>
+                    <frontName>cmspro</frontName>
+                </args>
+            </cmspro>
+        </routers>
+        <layout>
+            <updates>
+				<df_cmspro module="Df_Cmspro">
+					<file>df/cmspro.xml</file>
+				</df_cmspro>
+            </updates>
+        </layout>
+        <translate>
+			<modules>
+				<Df_Cmspro>
+					<files>
+						<default>Df_Cmspro.csv</default>
+					</files>
+				</Df_Cmspro>
+			</modules>
+		</translate>
+    </frontend>
+    <admin>
+        <routers>
+			<cmspro>
+				<use>admin</use>
+				<args>
+					<module>Df_Cmspro</module>
+					<frontName>cmspro</frontName>
+				</args>
+			</cmspro>
+        </routers>
+    </admin>
+    <default>
+        <admin>
+            <df_cmspro>
+                
+            </df_cmspro>
+        </admin>
+    </default>
+
+
+
+    <adminhtml>
+		<menu>
+			<cmspro module="df_cmspro">
+				<title>Cmspro</title>
+				<sort_order>71</sort_order>
+				<depends>
+					<config>df_cmspro/info/enabled</config>
+				</depends>
+				<children>
+					<addnews module="df_cmspro" translate="title">
+						<title>Add News</title>
+						<sort_order>0</sort_order>
+						<action>cmspro/adminhtml_news/new</action>
+					</addnews>
+					<news module="df_cmspro" translate="title">
+						<title>Manage News</title>
+						<sort_order>10</sort_order>
+						<action>cmspro/adminhtml_news/index</action>
+					</news>
+					<category module="df_cmspro" translate="title">
+						<title>Manage Categories</title>
+						<sort_order>20</sort_order>
+						<action>cmspro/adminhtml_category</action>
+					</category>
+					<configurations module="df_cmspro" translate="title">
+						<title>Configurations</title>
+						<sort_order>30</sort_order>
+						<action>adminhtml/system_config/edit/section/df_cmspro</action>
+					</configurations>
+				</children>
+			</cmspro>
+		</menu>
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <df_cmspro>
+                                            <title>Российская сборка → Журнал [устаревший]</title>
+                                        </df_cmspro>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<df_cmspro module="Df_Cmspro">
+					<file>df/cmspro.xml</file>
+				</df_cmspro>
+			</updates>
+		</layout>
+        <translate>
+			<modules>
+				<Df_Cmspro>
+					<files>
+						<default>Df_Cmspro.csv</default>
+					</files>
+				</Df_Cmspro>
+			</modules>
+		</translate>
+    </adminhtml>
+
+
+
+
+
+    <global>
+    	<rewrite>
+			<df_cmspro_process>
+				<from><![CDATA[#^/admin/process/#]]></from>
+				<to>/cmspro/adminhtml_process/</to>
+			</df_cmspro_process>
+		</rewrite>
+        <models>
+            <df_cmspro>
+                <class>Df_Cmspro_Model</class>
+                <resourceModel>df_cmspro_resource</resourceModel>
+            </df_cmspro>
+            <df_cmspro_resource>
+                <class>Df_Cmspro_Model_Resource</class>
+                <entities>
+                    <category><table>cmspro_category</table></category>
+                    <category_store><table>cmspro_category_store</table></category_store>
+                    <news><table>cmspro_news</table></news>
+                    <news_store><table>cmspro_news_store</table></news_store>
+                    <news_category><table>cmspro_news_category</table></news_category>
+                </entities>
+            </df_cmspro_resource>
+        </models>
+        <resources>
+            <cmspro_setup>
+                <setup>
+                    <module>Df_Cmspro</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </cmspro_setup>
+            <cmspro_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </cmspro_write>
+            <cmspro_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </cmspro_read>
+        </resources>
+        <blocks>
+            <df_cmspro>
+                <class>Df_Cmspro_Block</class>
+            </df_cmspro>
+        </blocks>
+        <helpers>
+            <df_cmspro>
+                <class>Df_Cmspro_Helper</class>
+            </df_cmspro>
+        </helpers>
+    </global>
+
+
+
+    <default>
+		<df_cmspro>
+			<info>
+				<enabled>0</enabled>
+				<category_suffix>.html</category_suffix>
+				<news_suffix>.html</news_suffix>
+				<news_thumbnail_size>128-128</news_thumbnail_size>
+				<latest_news_thumbnail_size>100-100</latest_news_thumbnail_size>
+				<photo_background_color>255,255,255</photo_background_color>
+				<clear_cache>Clear cache</clear_cache>
+				<backend_thumbnail_size>60-60</backend_thumbnail_size>
+				<news_per_page_allowed>5,10,15</news_per_page_allowed>
+				<news_per_page_default_value>5</news_per_page_default_value>
+				<number_newer_news>5</number_newer_news>
+				<number_newer_news>5</number_newer_news>
+			</info>
+			<menu>
+				<add_to_standard_category_menu>1</add_to_standard_category_menu>
+				<show_root>0</show_root>
+				<leftmenu>0</leftmenu>
+				<rightmenu>0</rightmenu>
+				<collapse>1</collapse>
+				<deeplevel>5</deeplevel>
+			</menu>
+			<news>
+				<show_latest_news>1</show_latest_news>
+				<number_news_latest>10</number_news_latest>
+				<root_cmspro_name>Статьи</root_cmspro_name>
+				<root_cmspro_url>articles</root_cmspro_url>
+			</news>
+
+			<featured>
+				<enabled>0</enabled>
+				<position>left</position>
+			</featured>
+		</df_cmspro>
+	</default>
+</config>

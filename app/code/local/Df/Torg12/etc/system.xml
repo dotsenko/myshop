@@ -1,0 +1,405 @@
+<?xml version='1.0'?>
+<config>
+   <sections>
+        <df_shipping>
+            <groups>
+            	<torg12 translate='label'>
+                    <label>ТОРГ-12</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                    	<enabled translate='label'>
+                            <label>Включить?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							<df_feature>df-torg12</df_feature>
+                        </enabled>
+
+
+
+						<consignor translate='label'>
+							<label>Грузоотправитель</label>
+							<comment>
+								<![CDATA[
+									Организация-грузоотправитель
+									(полное или сокращенное наименование продавца
+									в соответствии с учредительными документами),
+									его ИНН,
+									место нахождения продавца
+									в соответствии с учредительными документами
+									(юридический адрес),
+									телефон, факс,
+									банковские реквизиты
+								]]>
+							</comment>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>200</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+						</consignor>
+
+
+
+                        <consignor_okpo translate='label'>
+                            <label>ОКПО грузоотправителя</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </consignor_okpo>
+
+
+
+                        <supplier_okpo translate='label'>
+                            <label>ОКПО поставщика</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>275</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </supplier_okpo>
+
+
+
+						<consignor_subdivision translate='label'>
+							<label>Cтруктурное подразделение грузоотправителя</label>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>300</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<depends><enabled>1</enabled></depends>
+						</consignor_subdivision>
+
+
+
+						<supplier translate='label'>
+							<label>Поставщик</label>
+							<comment>
+								<![CDATA[
+									Организация, адрес, телефон, факс, банковские реквизиты
+								]]>
+							</comment>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>400</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+						</supplier>
+
+
+
+
+						<reason translate='label'>
+							<label>Основание</label>
+							<comment>
+								<![CDATA[
+									Договор, заказ-наряд.
+								]]>
+							</comment>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>500</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+						</reason>
+
+
+                        <accountant translate='label'>
+                            <label>Главный (старший) бухгалтер</label>
+							<comment>
+								<![CDATA[
+									Фамилия и инициалы
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>600</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </accountant>
+
+
+
+                        <manager translate='label'>
+                            <label>Кто разрешил отпуск груза (имя)</label>
+							<comment>
+								<![CDATA[
+									Фамилия и инициалы
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>700</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </manager>
+
+
+                        <manager_position translate='label'>
+                            <label>Кто разрешил отпуск груза (должность)</label>
+							<comment>
+								<![CDATA[
+									Должность
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>800</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </manager_position>
+
+
+
+                        <giver translate='label'>
+                            <label>Кто произвёл отпуск груза (имя)</label>
+							<comment>
+								<![CDATA[
+									Фамилия и инициалы
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>900</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </giver>
+
+
+                        <giver_position translate='label'>
+                            <label>Кто произвёл отпуск груза (должность)</label>
+							<comment>
+								<![CDATA[
+									Должность
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </giver_position>
+
+
+
+
+						<default_unit_name translate='label'>
+                            <label>Единица измерения товара по умолчанию (название)</label>
+							<comment>
+								<![CDATA[
+									Сокращённое название согласно ОКЕИ
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </default_unit_name>
+
+
+
+						<default_unit_code translate='label'>
+                            <label>Единица измерения товара по умолчанию (код)</label>
+							<comment>
+								<![CDATA[
+									Код по ОКЕИ
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </default_unit_code>
+
+
+
+						<default_package_name translate='label'>
+                            <label>Вид упаковки товара по умолчанию</label>
+							<comment>
+								<![CDATA[
+									Сокращённое название, например: «кор.»
+								]]>
+							</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </default_package_name>
+
+
+
+
+
+						<default_product_weight_unit translate='label'>
+                            <label>Единица веса товара по умолчанию</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1400</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </default_product_weight_unit>
+
+
+
+						<document_weight_unit translate='label'>
+                            <label>Единица веса товара для документа</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1500</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </document_weight_unit>
+
+
+
+						<weight_precision translate='label'>
+                            <label>Количество дробных цифр в записи веса</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1550</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </weight_precision>
+
+
+
+
+						<default_vat translate='label'>
+                            <label>Ставка НДС по умолчанию (в %)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1600</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </default_vat>
+
+
+
+						<num_rows_on_first_page translate='label'>
+                            <label>Количество строк заказа на первой странице</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1700</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+
+	                        <frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<validate>required-entry</validate>
+							<depends><enabled>1</enabled></depends>
+                        </num_rows_on_first_page>
+
+
+
+                    </fields>
+                </torg12>
+
+            </groups>
+        </df_shipping>
+
+
+    </sections>
+</config>

@@ -1,0 +1,253 @@
+<?xml version='1.0'?>
+<config>
+    <modules>
+        <Df_Cms>
+             <version>2.0.2</version>
+        </Df_Cms>
+    </modules>
+
+
+	<df>
+		<features>
+			<df-cms-2>
+				<title>Статьи</title>
+				<url>http://magento-forum.ru/forum/195/</url>
+			</df-cms-2>
+		</features>
+	</df>
+
+
+    <global>
+        <models>
+
+			<cms>
+				<rewrite>
+					<template_filter>Df_Widget_Model_Template_Filter</template_filter>
+				</rewrite>
+			</cms>
+
+			<cms_mysql4>
+				<rewrite>
+					<page>Df_Cms_Model_Resource_Page</page>
+				</rewrite>
+			</cms_mysql4>
+
+			<cms_resource>
+				<rewrite>
+					<page>Df_Cms_Model_Resource_Page</page>
+				</rewrite>
+			</cms_resource>
+
+            <df_cms>
+                <class>Df_Cms_Model</class>
+                <resourceModel>df_cms_mysql4</resourceModel>
+            </df_cms>
+            <df_cms_mysql4>
+                <class>Df_Cms_Model_Mysql4</class>
+                <entities>
+                    <page_version><table>df_cms_page_version</table></page_version>
+                    <page_revision><table>df_cms_page_revision</table></page_revision>
+                    <increment><table>df_cms_increment</table></increment>
+                    <hierarchy_metadata>
+                        <table>df_cms_hierarchy_metadata</table>
+                    </hierarchy_metadata>
+                    <hierarchy_node>
+                        <table>df_cms_hierarchy_node</table>
+                    </hierarchy_node>
+                    <hierarchy_lock>
+                        <table>df_cms_hierarchy_lock</table>
+                    </hierarchy_lock>
+                </entities>
+            </df_cms_mysql4>
+
+
+        </models>
+        <blocks>
+            <df_cms>
+                <class>Df_Cms_Block</class>
+            </df_cms>
+        </blocks>
+        <helpers>
+            <df_cms>
+                <class>Df_Cms_Helper</class>
+            </df_cms>
+        </helpers>
+        <resources>
+            <df_cms_setup>
+                <setup>
+                    <module>Df_Cms</module>
+                    <class>Df_Cms_Model_Mysql4_Setup</class>
+                </setup>
+            </df_cms_setup>
+        </resources>
+        <events>
+            <cms_controller_router_match_before>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>cmsControllerRouterMatchBefore</method>
+                    </df_cms>
+                </observers>
+            </cms_controller_router_match_before>
+
+			<controller_front_init_routers>
+				<observers>
+					<df_cms>
+						<!--
+							Для поддержки кириллицы в адресах текстовых страниц
+						-->
+						<class>Df_Cms_Controller_Router</class>
+						<method>initControllerRouters</method>
+					</df_cms>
+				</observers>
+			</controller_front_init_routers>
+
+        </events>
+    </global>
+
+
+    <frontend>
+
+        <events>
+			<controller_action_layout_generate_blocks_after>
+				<observers>
+					<df_cms__controller_action_layout_generate_blocks_after>
+						<class>df_cms/dispatcher</class>
+						<method>controller_action_layout_generate_blocks_after</method>
+					</df_cms__controller_action_layout_generate_blocks_after>
+				</observers>
+			</controller_action_layout_generate_blocks_after>
+
+
+			<page_block_html_topmenu_gethtml_before>
+				<observers>
+					<df_cms__page_block_html_topmenu_gethtml_before>
+						<class>df_cms/dispatcher</class>
+						<method>page_block_html_topmenu_gethtml_before</method>
+					</df_cms__page_block_html_topmenu_gethtml_before>
+				</observers>
+			</page_block_html_topmenu_gethtml_before>
+
+
+			<rm_menu_top_add_submenu>
+				<observers>
+					<df_cms__rm_menu_top_add_submenu>
+						<class>df_cms/dispatcher</class>
+						<method>rm_menu_top_add_submenu</method>
+					</df_cms__rm_menu_top_add_submenu>
+				</observers>
+			</rm_menu_top_add_submenu>
+
+
+
+
+        </events>
+
+
+		<layout>
+			<updates>
+				<df_cms>
+					<file>df/cms.xml</file>
+				</df_cms>
+			</updates>
+		</layout>
+
+    </frontend>
+
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <df_cms>
+                    <file>df/cms.xml</file>
+                </df_cms>
+            </updates>
+        </layout>
+        <events>
+            <adminhtml_cms_page_edit_tab_main_prepare_form>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>onMainTabPrepareForm</method>
+                    </df_cms>
+                </observers>
+            </adminhtml_cms_page_edit_tab_main_prepare_form>
+            <cms_page_save_before>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>cmsPageSaveBefore</method>
+                    </df_cms>
+                </observers>
+            </cms_page_save_before>
+            <cms_page_save_after>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>cmsPageSaveAfter</method>
+                    </df_cms>
+                </observers>
+            </cms_page_save_after>
+            <admin_user_delete_after>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>adminUserDeleteAfter</method>
+                    </df_cms>
+                </observers>
+            </admin_user_delete_after>
+            <cms_page_get_available_statuses>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>modifyPageStatuses</method>
+                    </df_cms>
+                </observers>
+            </cms_page_get_available_statuses>
+            <cms_page_delete_after>
+                <observers>
+                    <df_cms>
+                        <class>df_cms/observer</class>
+                        <method>cmsPageDeleteAfter</method>
+                    </df_cms>
+                </observers>
+            </cms_page_delete_after>
+        </events>
+        <translate>
+            <modules>
+                <Df_Cms>
+                     <files>
+                          <default>Df_Cms.csv</default>
+                     </files>
+                </Df_Cms>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <df_cms before='Mage_Adminhtml'>Df_Cms_Adminhtml</df_cms>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <default>
+        <df_cms>
+            <hierarchy>
+                <enabled>0</enabled>
+				<add_to_catalog_menu>0</add_to_catalog_menu>
+                <lock_timeout>0</lock_timeout>
+                <menu_layout>content</menu_layout>
+            </hierarchy>
+            <versioning>
+                <enabled>0</enabled>
+				<default>0</default>
+            </versioning>
+        </df_cms>
+    </default>
+</config>

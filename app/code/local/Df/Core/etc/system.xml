@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<config>
+	<tabs>
+		<df>
+			<label>Российская сборка</label>
+			<sort_order>-100</sort_order>
+		</df>
+	</tabs>
+	<sections>
+		<design>
+			<groups>
+				<theme>
+					<fields>
+						<locale>
+							<label>Translations Folder</label>
+						</locale>
+						<layout>
+							<label>Layout Folder</label>
+						</layout>
+						<default>
+							<label>Default Theme</label>
+						</default>
+					</fields>
+				</theme>
+			</groups>
+		</design>
+
+		<general>
+			<groups>
+				<country>
+					<fields>
+						<default>
+							<comment>
+								<![CDATA[
+									Эта страна станет предварительно выбранным значением
+									в графе выбора страны при заполнении покупателем и администратором
+									различных адресных форм (в то же время покупатель и администратор
+									будут иметь возможность выбрать	другую страну).
+								]]>
+							</comment>
+						</default>
+						<allow>
+							<comment>
+								<![CDATA[
+									При заполнении покупателем и администратором различных адресных форм
+									они смогут выбрать страну только из заданного здесь перечня.
+								]]>
+							</comment>
+						</allow>
+					</fields>
+				</country>
+			</groups>
+		</general>
+	</sections>
+</config>

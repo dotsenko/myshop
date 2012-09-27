@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<layout version='0.1.0'>
+	<gallery_admin_adminhtml_gallery_index>
+		<reference name='content'>
+			<block type='gallery/adminhtml_gallery' name='gallery'/>
+		</reference>
+	</gallery_admin_adminhtml_gallery_index>
+	<gallery_admin_adminhtml_album_index>
+		<reference name='content'>
+			<block type='gallery/adminhtml_album' name='album'/>
+		</reference>
+	</gallery_admin_adminhtml_album_index>
+
+	<gallery_admin_adminhtml_album_edit>
+		<reference name='head'>
+			<action method='addJs'>
+				<script>df/source/modules/gallery.js</script>
+			</action>
+		</reference>
+	</gallery_admin_adminhtml_album_edit>
+
+	<gallery_admin_adminhtml_review_index>
+		<reference name='content'>
+			<block type='gallery/adminhtml_review' name='album'/>
+		</reference>
+	</gallery_admin_adminhtml_review_index>
+
+	<adminhtml_cache_index>
+		<reference name='content'>
+			<remove name='cache.additional'/>
+			<block type='adminhtml/cache_additional' name='gallerypro.cache.additional'
+				   template='df/gallery/cache/additional.phtml'/>
+		</reference>
+	</adminhtml_cache_index>
+</layout>

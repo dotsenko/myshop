@@ -1,0 +1,22 @@
+<?php /** @var Df_Core_Block_Element_Style $this */ ?>
+
+<style type='text/css'>
+	<?php
+
+		/** @var Df_Varien_Data_Collection $selectors  */
+		$selectors = $this->getSelectors();
+
+		echo
+			implode (
+				"\n\n"
+				,
+				array_map (
+					'df_tab'
+					,
+					$selectors->walk ('toHtml')
+				)
+			)
+		;
+	?>
+
+</style>

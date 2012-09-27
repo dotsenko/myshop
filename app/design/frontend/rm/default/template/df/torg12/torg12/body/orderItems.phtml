@@ -1,0 +1,123 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Body_OrderItems $this */ ?>
+
+<table class='df-orderItems'>
+
+	<col class='df-column-1'/>
+	<col class='df-column-2'/>
+	<col class='df-column-3'/>
+	<col class='df-column-4'/>
+	<col class='df-column-5'/>
+	<col class='df-column-6'/>
+	<col class='df-column-7'/>
+	<col class='df-column-8'/>
+	<col class='df-column-9'/>
+	<col class='df-column-10'/>
+	<col class='df-column-11'/>
+	<col class='df-column-12'/>
+	<col class='df-column-13'/>
+	<col class='df-column-14'/>
+	<col class='df-column-15'/>
+
+	<?php
+		echo $this->renderTableHeader ();
+	?>
+
+	<tbody>
+
+		<?php
+
+			/** @var int $currentItemOrdering  */
+			$currentItemOrdering = $this->getFirstItemOrdering ();
+
+			df_assert_integer ($currentItemOrdering);
+
+			foreach ($this->getPageItems() as $item) {
+
+				/** @var Mage_Sales_Model_Order_Item $item */
+				df_assert ($item instanceof Mage_Sales_Model_Order_Item);
+
+				echo
+					$this
+						->renderOrderItem (
+							array (
+								Df_Torg12_Block_Frontend_Torg12_Body_Table_OrderItem
+									::PARAM__ITEM_ORDERING => $currentItemOrdering
+
+								,
+								Df_Torg12_Block_Frontend_Torg12_Body_Table_OrderItem
+									::PARAM__ORDER_ITEM => $item
+							)
+						)
+				;
+
+				$currentItemOrdering++;
+
+			}
+		?>
+
+
+		<!--
+			Итоговая часть таблицы.
+			Обратите внимание, что мы не используем тег tfoot,
+			потому что современные браузеры типа Firefox 3.6 - 7.0
+			при печати отображают содержимое tfoot на каждом печатном листе,
+			а нам нужно отобразить итоговую часть только в конце таблице,
+			а на каждом листе итоговая часть тоже есть, но индивидуальная (итоги по листу).
+		-->
+		<tr class='df-footer'>
+			<td colspan='7' class='df-label'>Итого</td>
+			<td>
+				<?php echo $this->getQtyOrdered(); ?>
+			</td>
+			<td><?php echo $this->getGrossWeightAsString (); ?></td>
+			<td><?php echo $this->getNetWeightAsString (); ?></td>
+			<td>X</td>
+			<td>
+				<?php
+					echo
+						$this->formatPrice (
+							$this->getTotalPriceWithoutTax ()
+						)
+					;
+				?>
+			</td>
+			<td>X</td>
+			<td>
+				<?php
+					echo
+						$this->formatPrice (
+							$this->getTaxAmount ()
+						)
+					;
+				?>
+			</td>
+			<td>
+				<?php
+					echo
+						$this->formatPrice (
+							/**
+							 * Нельзя включать в ТОРГ-12 стоимость доставки
+							 */
+							$this->getTotalPriceWithTax()
+						)
+					;
+				?>
+			</td>
+		</tr>
+
+		<?php
+			if (
+					!$this->isFirstPage()
+				||
+					(
+							count ($this->getPageItems())
+						===
+							count ($this->getOrder()->getAllVisibleItems())
+					)
+		) {
+				echo $this->renderTotals();
+			}
+		?>
+
+	</tbody>
+</table>

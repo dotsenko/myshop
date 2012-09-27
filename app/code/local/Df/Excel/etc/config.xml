@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Excel>
+            <version>1.0.0</version>
+        </Df_Excel>
+    </modules>
+
+	<global>
+		<helpers>
+			<df_excel>
+				<class>Df_Excel_Helper</class>
+			</df_excel>
+		</helpers>
+	</global>
+
+</config>

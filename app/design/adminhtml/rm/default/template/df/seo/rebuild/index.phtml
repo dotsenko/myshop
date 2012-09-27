@@ -1,0 +1,21 @@
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td style="width:50%;"><h3 class="icon-head">Перестроить URL Keys</h3></td>
+            <td class="form-buttons">
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="entry-edit">
+	<form
+		name="df_seo_rebuild_form"
+		id="df_seo_rebuild_form"
+		method="post"
+		action="<?php echo Mage::getModel('adminhtml/url')->getUrl('df_seo/rebuild/process'); ?>">
+		<?php echo $this->getBlockHtml('formkey')?>
+		<div class="form-buttons">
+		<button class="scalable" type="submit"><span>Приступить</span></button>
+		</div>
+	</form>
+</div>

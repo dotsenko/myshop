@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Catalog>
+            <version>1.0.0</version>
+        </Df_Catalog>
+    </modules>
+
+	<global>
+
+		<blocks>
+			<df_catalog>
+				<class>Df_Catalog_Block</class>
+			</df_catalog>
+
+			<catalog>
+				<rewrite>
+
+					<!--
+						Позволяет другим модулям добавлять свои пункты в товарное меню
+					-->
+					<navigation>Df_Catalog_Block_Navigation</navigation>
+
+					<product_list>Df_Catalog_Block_Product_List</product_list>
+					<product_price>Df_Catalog_Block_Product_Price</product_price>
+					<product_view>Df_Catalog_Block_Product_View</product_view>
+					<product_view_attributes>Df_Catalog_Block_Product_View_Attributes</product_view_attributes>
+				</rewrite>
+			</catalog>
+		</blocks>
+
+		<helpers>
+			<df_catalog>
+				<class>Df_Catalog_Helper</class>
+			</df_catalog>
+
+			<catalog>
+				<rewrite>
+					<image>Df_Catalog_Helper_Image</image>
+					<product_compare>Df_Catalog_Helper_Product_Compare</product_compare>
+					<product_url>Df_Catalog_Helper_Product_Url</product_url>
+				</rewrite>
+			</catalog>
+		</helpers>
+
+
+
+		<models>
+			<df_catalog>
+				<class>Df_Catalog_Model</class>
+				<resourceModel>df_catalog_resource</resourceModel>
+			</df_catalog>
+
+            <df_catalog_resource>
+                <class>Df_Catalog_Model_Resource</class>
+			</df_catalog_resource>
+
+            <catalog>
+                <rewrite>
+                    <category>Df_Catalog_Model_Category</category>
+	                <category_attribute_backend_image>Df_Catalog_Model_Category_Attribute_Backend_Image</category_attribute_backend_image>
+
+	                <!--Dataflow mods-->
+	                <convert_adapter_product>Df_Catalog_Model_Convert_Adapter_Product</convert_adapter_product>
+	                <convert_parser_product>Df_Catalog_Model_Convert_Parser_Product</convert_parser_product>
+
+
+	                <indexer_url>Df_Catalog_Model_Indexer_Url</indexer_url>
+
+	                <product>Df_Catalog_Model_Product</product>
+	                <product_attribute_backend_media>Df_Catalog_Model_Product_Attribute_Backend_Media</product_attribute_backend_media>
+					<product_image>Df_Catalog_Model_Product_Image</product_image>
+	                <product_option>Df_Catalog_Model_Product_Option</product_option>
+	                <product_url>Df_Catalog_Model_Product_Url</product_url>
+
+	                <url>Df_Catalog_Model_Url</url>
+                </rewrite>
+            </catalog>
+
+
+
+			<!-- Для Magento версии не меньше 1.6 -->
+			<catalog_resource>
+				<rewrite>
+					<url>Df_Catalog_Model_Resource_Url</url>
+					<product_collection>Df_Catalog_Model_Resource_Product_Collection</product_collection>
+				</rewrite>
+			</catalog_resource>
+
+
+			<!-- Для Magento версии меньше 1.6 -->
+			<catalog_resource_eav_mysql4>
+				<rewrite>
+					<url>Df_Catalog_Model_Resource_Url</url>
+					<product_collection>Df_Catalog_Model_Resource_Product_Collection</product_collection>
+				</rewrite>
+			</catalog_resource_eav_mysql4>
+
+		</models>
+
+        <resources>
+            <df_catalog_setup>
+                <setup>
+                    <module>Df_Catalog</module>
+					<class>Df_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </df_catalog_setup>
+        </resources>
+
+	</global>
+
+
+
+
+
+
+	<admin>
+		<fieldsets>
+			<catalog_product_dataflow>
+				<df_additional_images><external>1</external></df_additional_images>
+			</catalog_product_dataflow>
+		</fieldsets>
+	</admin>
+
+
+
+
+
+
+    <frontend>
+
+		<events>
+			<core_block_abstract_to_html_after>
+				<observers>
+					<df_catalog_core_block_abstract_to_html_after>
+						<!--
+							При необходимости добавляет в макет блок
+							«Иллюстрированное меню товарных разделов»
+						-->
+						<type>singleton</type>
+						<class>df_catalog/category_navigation_observer</class>
+						<method>core_block_abstract_to_html_after</method>
+					</df_catalog_core_block_abstract_to_html_after>
+				</observers>
+			</core_block_abstract_to_html_after>
+		</events>
+
+
+        <layout>
+            <updates>
+				<df_catalog module="Df_Catalog">
+					<file>df/catalog.xml</file>
+				</df_catalog>
+            </updates>
+        </layout>
+
+
+        <translate>
+			<modules>
+				<Df_Catalog>
+					<files>
+						<default>Df_Catalog.csv</default>
+					</files>
+				</Df_Catalog>
+			</modules>
+		</translate>
+    </frontend>
+
+
+
+
+
+
+	<adminhtml>
+        <translate>
+			<modules>
+				<Df_Catalog>
+					<files>
+						<default>Df_Catalog.csv</default>
+					</files>
+				</Df_Catalog>
+			</modules>
+		</translate>
+	</adminhtml>
+
+
+
+	<default>
+		<catalog>
+			<custom_options>
+				<date_fields_order>d,m,y</date_fields_order>
+				<time_format>24h</time_format>
+				<use_calendar>1</use_calendar>
+			</custom_options>
+		</catalog>
+	</default>
+
+
+
+
+</config>

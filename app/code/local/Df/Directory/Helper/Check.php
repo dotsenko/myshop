@@ -1,0 +1,90 @@
+<?php
+
+
+class Df_Directory_Helper_Check extends Mage_Core_Helper_Abstract {
+
+
+
+	/**
+	 * @var Varien_Data_Collection_Db $collection
+	 * @return bool
+	 */
+	public function countryCollection (Varien_Data_Collection_Db $collection) {
+
+		/** @var bool $result  */
+		$result =
+				@class_exists ('Mage_Directory_Model_Resource_Country_Collection')
+			?
+				($collection instanceof	Mage_Directory_Model_Resource_Country_Collection)
+			:
+				($collection instanceof	Mage_Directory_Model_Mysql4_Country_Collection)
+		;
+
+		df_result_boolean ($result);
+
+		return $result;
+
+	}
+
+
+
+
+	/**
+	 * @var Varien_Data_Collection_Db $collection
+	 * @return bool
+	 */
+	public function regionCollection (Varien_Data_Collection_Db $collection) {
+
+		/** @var bool $result  */
+		$result =
+				@class_exists ('Mage_Directory_Model_Resource_Region_Collection')
+			?
+					($collection instanceof	Mage_Directory_Model_Resource_Region_Collection)
+				||
+					($collection instanceof	Df_Directory_Model_Resource_Legacy_Region_Collection)
+			:
+				($collection instanceof	Df_Directory_Model_Resource_Legacy_Region_Collection)
+		;
+
+		return $result;
+
+	}
+
+
+
+
+
+
+
+
+	/**
+	 * @static
+	 * @return string
+	 */
+	public static function getClass () {
+		return 'Df_Directory_Helper_Check';
+	}
+
+
+	/**
+	 * Например, для класса Df_SalesRule_Model_Event_Validator_Process
+	 * метод должен вернуть: «df_sales_rule/event_validator_process»
+	 *
+	 * @static
+	 * @return string
+	 */
+	public static function getNameInMagentoFormat () {
+
+		/** @var string $result */
+		static $result;
+
+		if (!isset ($result)) {
+			$result = df()->reflection()->getModelNameInMagentoFormat (self::getClass());
+		}
+
+		return $result;
+	}
+
+
+
+}

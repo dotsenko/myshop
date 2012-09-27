@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Wishlist>
+            <version>1.0.0</version>
+        </Df_Wishlist>
+    </modules>
+
+	<global>
+
+		<helpers>
+			<df_wishlist>
+				<class>Df_Wishlist_Helper</class>
+			</df_wishlist>
+
+			<wishlist>
+				<rewrite>
+					<data>Df_Wishlist_Helper_Data</data>
+				</rewrite>
+			</wishlist>
+		</helpers>
+
+	</global>
+
+
+</config>

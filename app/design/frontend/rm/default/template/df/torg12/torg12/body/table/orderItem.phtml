@@ -1,0 +1,155 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Body_Table_OrderItem $this */ ?>
+<?php
+	/** @var bool $isItLastRowOnPage  */
+	$isItLastRowOnPage =
+			(
+					$this->getItemOrdering()
+				===
+					df_cfg()->torg12()->getNumRowsOnFirstPage()
+			)
+		||
+			(
+					(
+							$this->getItemOrdering()
+					 	===
+						 	count ($this->getOrder()->getAllVisibleItems ())
+					)
+				&&
+					(
+							$this->getItemOrdering()
+						<
+							df_cfg()->torg12()->getNumRowsOnFirstPage()
+					)
+			)
+	;
+
+	df_assert_boolean ($isItLastRowOnPage);
+
+
+
+	/** @var bool $isItFirstRowOnPage  */
+	$isItFirstRowOnPage =
+			$this->getItemOrdering()
+		===
+			(1 + df_cfg()->torg12()->getNumRowsOnFirstPage())
+	;
+
+	df_assert_boolean ($isItFirstRowOnPage);
+
+
+
+	/** @var array $rowClasses  */
+	$rowClasses = array ('df-orderItem');
+
+	if ($isItLastRowOnPage) {
+		$rowClasses []= 'df-lastRowOnPage';
+	}
+
+	if ($isItFirstRowOnPage) {
+		$rowClasses []= 'df-firstRowOnPage';
+	}
+?>
+
+<tr class='<?php echo df_output()->getCssClassesAsString($rowClasses); ?>'>
+	<td class='df-column-1 df-ordering'>
+		<?php echo $this->getItemOrdering(); ?>
+	</td>
+	<td class='df-column-2 df-productName'>
+		<?php
+			echo
+				$this->escapeHtml (
+					$this->getOrderItem()->getName()
+				)
+			;
+		?>
+	</td>
+	<td class='df-column-3 df-productSku'>
+		<?php
+			echo
+				$this->escapeHtml (
+					$this->getOrderItem()->getSku()
+				)
+			;
+		?>
+	</td>
+	<td class='df-column-4 df-unitName'>
+		<?php
+			echo df_cfg()->torg12()->getDefaultUnitName();
+		?>
+	</td>
+	<td class='df-column-5 df-unitCode'>
+		<?php
+			echo df_cfg()->torg12()->getDefaultUnitCode();
+		?>
+	</td>
+	<td class='df-column-6'>
+		<?php
+			echo df_cfg()->torg12()->getDefaultPackageName();
+		?>
+	</td>
+	<td class='df-column-7'>
+		1
+	</td>
+	<td class='df-column-8'>
+		<?php
+			echo
+				intval (
+					$this->getOrderItem()->getQtyOrdered()
+				)
+			;
+		?>
+	</td>
+
+	<?php
+		$weightAsString =
+			$this->formatWeight (
+				$this->getOrderItem()->getRowWeight()
+			)
+		;
+	?>
+
+
+	<td class='df-column-9'><?php echo $weightAsString; ?></td>
+	<td class='df-column-10'><?php echo $weightAsString; ?></td>
+	<td class='df-column-11'>
+		<?php
+			echo
+				$this->formatPrice (
+					$this->getOrderItem()->getPrice()
+				)
+			;
+		?>
+	</td>
+	<td class='df-column-12'>
+		<?php
+			echo
+				$this->formatPrice (
+					$this->getOrderItem()->getRowTotal()
+				)
+			;
+		?>
+	</td>
+	<td class='df-column-13'>
+		<?php
+			echo df_cfg()->torg12()->getDefaultVat();
+		?>
+	</td>
+	<td class='df-column-14'>
+		<?php
+			echo
+				$this->formatPrice (
+					$this->getOrderItem()->getTaxAmount()
+				)
+			;
+		?>
+	</td>
+	<td class='df-column-15'>
+		<?php
+			echo
+				$this->formatPrice (
+					$this->getOrderItem()->getRowTotalInclTax()
+				)
+			;
+		?>
+	</td>
+</tr>

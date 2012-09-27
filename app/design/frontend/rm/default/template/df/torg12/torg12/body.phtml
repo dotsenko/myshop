@@ -1,0 +1,37 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Body $this */ ?>
+<div class='df-body'>
+
+	<div class='df-body-heading'>
+
+		<h2>Товарная накладная</h2>
+
+		<ul class='df-params'>
+
+			<li class='df-param df-param-1'>
+				<div class='df-name'>Номер<br/>документа</div>
+				<div class='df-value'>
+					<?php echo $this->getDocumentPublicId(); ?>
+				</div>
+			</li>
+
+
+			<li class='df-param df-param-2'>
+				<div class='df-name'>Дата<br/>составления</div>
+				<div class='df-value'>
+					<?php echo $this->getDateFormatter()->getInRussianFormat(); ?>
+				</div>
+			</li>
+
+
+		</ul>
+
+	</div>
+
+
+	<?php echo $this->renderOrderItemsFirstPage (); ?>
+
+	<div class='df-breakAfter'> </div>
+
+	<?php echo $this->renderOrderItemsLastPage (); ?>
+
+</div>

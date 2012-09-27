@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<config>
+	<menu>
+		<system>
+			<children>
+				<df_localization translate='title'>
+					<title>Локализация</title>
+					<sort_order>-2</sort_order>
+					<children>
+
+						<verification translate='title' module='df_localization'>
+							<title>Проверка полноты перевода</title>
+							<sort_order>1000</sort_order>
+							<action>df_localization/verification/index</action>
+						</verification>
+
+						<!--
+						<dbToCsv translate='title' module='df_localization'>
+							<title>Записать переводы из БД в CSV</title>
+							<sort_order>3000</sort_order>
+							<action>df_localization/dbToCsv/index</action>
+						</dbToCsv>
+						-->
+					</children>
+				</df_localization>
+			</children>
+		</system>
+	</menu>
+
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<df_localization>
+								<title>Система → Локализация</title>
+								<sort_order>1000</sort_order>
+								<children>
+									<verification translate='title'>
+										<title>Проверка полноты перевода</title>
+									</verification>
+									<dbToCsv translate='title'>
+										<title>Запись переводов из БД в CSV</title>
+									</dbToCsv>
+								</children>
+							</df_localization>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

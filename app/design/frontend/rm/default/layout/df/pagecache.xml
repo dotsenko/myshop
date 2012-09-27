@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="right.poll">
+            <action method="setFrameTags"><start>!--[POLL--</start><end>!--POLL]--</end></action>
+        </reference>
+    </default>
+	<!--
+    <catalog_product_view>
+        <reference name="content">
+            <block
+				type="df_pagecache/catalog_product"
+				name="pagecache.cookie"
+				template="df/pagecache/catalog/product.phtml"
+			/>
+        </reference>
+    </catalog_product_view>
+    -->
+</layout>

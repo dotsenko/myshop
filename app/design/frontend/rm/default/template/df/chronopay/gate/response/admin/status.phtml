@@ -1,0 +1,44 @@
+<?php
+	if ($this->getModel ()) {
+		?>
+			<div class="df">
+				<div class="df-chronopay-order-status">
+
+					<?php
+						if (0 == $this->getModel ()->getCode ()) {
+							?>
+								<h3>
+									ChronoPay has accepted the payment
+								</h3>
+							<?php
+						}
+						else {
+							?>
+								<h3>
+									Error in capturing the payment via ChronoPay
+								</h3>
+								<ul class="df-chronopay-order-status">
+									<?php
+										$odd = true;
+										foreach ($this->getItems () as $key => $value) {
+											?>
+												<li class="<?php echo $odd ? "df-odd" : "df-even"; ?>">
+													<div class="df-cell df-key">
+														<?php echo $this->htmlEscape ($key); ?>
+													</div>
+													<div class="df-cell df-value">
+														<?php echo $this->htmlEscape ($value); ?>
+													</div>
+												</li>
+											<?php
+											$odd = !$odd;
+										}
+									?>
+								</ul>
+							<?php
+						}
+					?>
+				</div>
+			</div>
+		<?php
+	}

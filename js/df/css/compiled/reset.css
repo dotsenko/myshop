@@ -1,0 +1,91 @@
+.df html, .df body, .df div, .df span, .df applet, .df object, .df iframe, .df
+h1, .df h2, .df h3, .df h4, .df h5, .df h6, .df p, .df blockquote, .df pre, .df
+a, .df abbr, .df acronym, .df address, .df big, .df cite, .df code, .df
+del, .df dfn, .df em, .df font, .df img, .df ins, .df kbd, .df q, .df s, .df samp, .df
+small, .df strike, .df strong, .df sub, .df sup, .df tt, .df var, .df
+b, .df u, .df i, .df center, .df
+dl, .df dt, .df dd, .df ol, .df ul, .df li, .df
+fieldset, .df form, .df label, .df legend, .df
+table, .df caption, .df tbody, .df tfoot, .df thead, .df tr, .df th, .df td
+, .df button
+, .df menu
+, .df header
+, .df article
+, .df footer
+, .df nav
+, .df section
+, .df aside
+, .df figure
+, .df dialog
+, .df mark
+, .df time
+, .df meter
+, .df video
+, .df audio
+, .df details
+, .df datagrid
+, .df command {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: normal;
+  font-style: normal;
+  font-weight: normal; }
+
+.df body {
+  line-height: 1; }
+
+.df ol
+,
+.df ul
+,
+.df menu
+,
+.df li {
+  list-style: none; }
+
+.df blockquote, q {
+  quotes: none; }
+
+.df blockquote:before, .df blockquote:after,
+.df q:before, .df q:after {
+  content: '';
+  content: none; }
+
+/* remember to define focus styles! */
+.df :focus {
+  outline: 0; }
+
+/* remember to highlight inserts somehow! */
+.df ins {
+  text-decoration: none; }
+
+.df del {
+  text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+.df table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr#system-readmore {
+  display: none; }
+
+.df input.input-text
+,
+.df select,
+.df textarea {
+  background: #fff;
+  border: 1px solid #b6b6b6; }
+
+.df input.input-text
+,
+.df textarea {
+  padding: 0; }
+
+.df-hidden {
+  display: none; }

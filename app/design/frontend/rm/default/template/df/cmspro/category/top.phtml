@@ -1,0 +1,101 @@
+<?php 
+// Load gallery menu
+function getGalleryMenu(Df_Gallery_Model_Album $album, $level=0, $last=false)
+{
+	$html ='';
+	if($album->getStatus())
+	{
+		$html .="<li";
+		$hasChildren = $album->getChildrenAlbum();
+        if ($hasChildren) {
+             $html.= ' onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)"';
+        }
+		$html.= ' class="level'.$level;
+	    if ($last) {
+            $html .= ' last';
+        }
+	    if ($hasChildren) {
+            $cnt = 0;
+            foreach ($hasChildren as $child) {
+                if ($child->getStatus()) {
+                    $cnt++;
+                }
+            }
+            if ($cnt > 0) {
+                $html .= ' parent';
+            }
+        }
+        $html.= '">'."\n";
+        $html.= '<a href="'.$album->getUrlRewrite().'"><span>'.$album->getTitle().'</span></a>'."\n";
+        if ($hasChildren){
+
+            $j = 0;
+            $htmlChildren = '';
+            foreach ($hasChildren as $child) {
+                if ($child->getStatus()) {
+                    $htmlChildren.= getGalleryMenu($child, $level+1, ++$j >= $cnt);
+                }
+            }
+
+            if (!empty($htmlChildren)) {
+                $html.= '<ul class="level' . $level . '">'."\n"
+                        .$htmlChildren
+                        .'</ul>';
+            }
+
+        }
+        $html.= '</li>'."\n";
+        return $html;
+	}
+}
+$rootAlbum = Mage::getModel('gallery/album')->load(1);
+?>
+
+<?php $_menu = ''?>
+
+<?php
+	foreach ($this->getStoreCategories() as $_category) {
+		$_menu .= $this->drawItem($_category);
+	}
+?>
+<div class="nav-container">
+    <ul id="nav">
+    	<?php
+    	// Catalog menu 
+    	if ($_menu): 
+        	echo $_menu; 
+        endif; 
+        
+		$current_cat_id = (isset($_SESSION['cmspro_current_cat'])) ? $_SESSION['cmspro_current_cat']:"";
+		$current_cat_id = (($this->getRequest()->getParam('id')) && ($this->getRequest()->getModuleName()=="cmspro") && ($this->getRequest()->getControllerName()=="category")) ? $this->getRequest()->getParam('id') : $current_cat_id;
+
+        $categories = (Mage::getModel('df_cmspro/category')->getRootCategory());
+
+		if (df_cfg()->cmspro()->menu()->getAddToStandardCategoryMenu()){
+			if (df_cfg()->cmspro()->menu()->getShowRoot()) {
+				$root_menu = Mage::getModel('df_cmspro/category')->load(1);
+				?>
+					<li class="level0 nav-1 parent <?php echo ($current_cat_id) ? "active":""; ?>" onmouseout="toggleMenu(this,0)" onmouseover="toggleMenu(this,1)">
+						<a href="<?php echo Mage::getBaseUrl().$root_menu->_getUrlRewrite() ?>"><?php echo $root_menu->getName() ?></a>
+						<ul class="level0">
+							<?php
+								foreach($categories as $cat){
+									echo Mage::getModel('df_cmspro/category')->drawItem($cat);
+								}
+							?>
+						</ul>
+					</li>
+				<?php
+			}
+			else {
+				foreach($categories as $cat){
+					echo Mage::getModel('df_cmspro/category')->drawItem($cat,0,false,$current_cat_id);
+				}
+        	} 
+		}?>
+
+		<?php if(Mage::getStoreConfig("gallery/info/menu_enabled")):?>
+        	<?php echo getGalleryMenu($rootAlbum, 0, false)?>
+        <?php endif;?>
+    </ul>
+</div>

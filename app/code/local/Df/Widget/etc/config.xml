@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Widget>
+            <version>1.0.0</version>
+        </Df_Widget>
+    </modules>
+
+
+	<global>
+
+		<blocks>
+			<df_widget>
+				<class>Df_Widget_Block</class>
+			</df_widget>
+		</blocks>
+
+		<helpers>
+			<df_widget>
+				<class>Df_Widget_Helper</class>
+			</df_widget>
+		</helpers>
+
+		<models>
+			<widget>
+				<rewrite>
+					<template_filter>Df_Widget_Model_Template_Filter</template_filter>
+				</rewrite>
+			</widget>
+
+			<df_widget>
+				<class>Df_Widget_Model</class>
+			</df_widget>
+		</models>
+
+	</global>
+
+</config>

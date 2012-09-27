@@ -1,0 +1,148 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Footer_Top $this */ ?>
+
+<ul class='df-footer-top'>
+
+	<li class='df-row df-row-1'>
+
+		<div class='df-field'>
+
+			<div class='df-label-left'>
+				Товарная накладная имеет приложение на
+			</div>
+
+
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					один
+				</div>
+				<div class='df-label-with-line'></div>
+			</div>
+
+
+			<div class='df-label-right'>
+				листах
+			</div>
+
+		</div>
+
+	</li>
+
+
+
+	<li class='df-row df-row-2'>
+
+		<div class='df-field'>
+
+			<div class='df-label-left'>
+				и содержит
+			</div>
+
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo $this->getNumProductSkusInWords ();
+					?>
+				</div>
+				<div class='df-label-with-line'>(прописью)</div>
+			</div>
+
+			<div class='df-label-right'>
+				порядковых номеров записей
+			</div>
+
+		</div>
+	</li>
+
+
+
+	<li class='df-row df-row-3'>
+
+		<div class='df-field-1'>
+
+			<div class='df-label-left'>
+				Масса груза (нетто)
+			</div>
+
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo
+							$this->getOrderNetWeightInWords ()
+						;
+					?>
+				</div>
+				<div class='df-label-with-line'>(прописью)</div>
+			</div>
+		</div>
+
+		<div class='df-field-2'>
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo
+							$this->formatWeight (
+								$this->getOrder()->getWeight()
+							)
+						;
+					?>
+				</div>
+			</div>
+		</div>
+	</li>
+
+
+
+	<li class='df-row df-row-4'>
+
+		<div class='df-field df-field-1'>
+
+			<div class='df-label-left'>
+				Всего мест
+			</div>
+
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo $this->getQuantityInWords ();
+					?>
+				</div>
+				<div class='df-label-with-line'>(прописью)</div>
+			</div>
+
+		</div>
+
+
+		<div class='df-field df-field-2'>
+			<div class='df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo
+							$this->getOrderGrossWeightInWords ()
+						;
+					?>
+				</div>
+				<div class='df-label-with-line'>(прописью)</div>
+			</div>
+
+			<div class='df-label-left'>
+				Масса груза (брутто)
+			</div>
+
+		</div>
+
+
+		<div class='df-field df-field-3'>
+			<div class='df-input-container df-input-container'>
+				<div class='df-input df-input-with-1-line'>
+					<?php
+						echo
+							$this->formatWeight (
+								$this->getOrder()->getWeight()
+							)
+						;
+					?>
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>

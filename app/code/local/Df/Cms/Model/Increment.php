@@ -1,0 +1,103 @@
+<?php
+
+
+
+/**
+ * Increment model
+ *
+ * Description:
+ * For example we operate with such entities page, version and revision.
+ * We store increments for version and revision in such way for
+ * each page we need separate scope of version.
+ * In all version we need separate scope for revisions.
+ *
+ * When we store counter for version it has node = page_id and level = 0
+ * When we store counter for revision it has node = version_id (not increment number) and level = 1
+ * In case we will add something after revision something like sub-revision
+ * we will need to use node = revision_id and level = 2  (for future).
+ * Type is only one value '0' at this time bc revision control used only for pages.
+ *
+ * @category    Df
+ * @package     Df_Cms
+ *
+ */
+
+class Df_Cms_Model_Increment extends Mage_Core_Model_Abstract
+{
+    /*
+     * Increment types
+     */
+    const TYPE_PAGE = 0;
+
+    /*
+     * Increment levels
+     */
+    const LEVEL_VERSION = 0;
+    const LEVEL_REVISION = 1;
+
+    /**
+     * Constructor
+     */
+    protected function _construct()
+    {
+        parent::_construct();
+        $this->_init('df_cms/increment');
+    }
+
+    /**
+     * Load increment counter by passed node and level
+     *
+     * @param int $type
+     * @param int $node
+     * @param int $level
+     * @return Df_Cms_Model_Increment
+     */
+    public function loadByTypeNodeLevel($type, $node, $level)
+    {
+        $this->getResource()->loadByTypeNodeLevel($this, $type, $node, $level);
+
+        return $this;
+    }
+
+    /**
+     * Get incremented value of counter.
+     *
+     * @return mixed
+     */
+    protected function _getNextId()
+    {
+        $incrementId = $this->getLastId();
+        if ($incrementId) {
+            $incrementId++;
+        } else {
+            $incrementId = 1;
+        }
+
+        return $incrementId;
+    }
+
+    /**
+     * Generate new increment id for passed type, node and level.
+     *
+     * @param int $type
+     * @param int $node
+     * @param int $level
+     * @return string
+     */
+    public function getNewIncrementId($type, $node, $level)
+    {
+        $this->loadByTypeNodeLevel($type, $node, $level);
+
+        // if no counter for such combination we need to create new
+        if (!$this->getId()) {
+            $this->setType($type)
+                ->setNode($node)
+                ->setLevel($level);
+        }
+
+        $newIncrementId = $this->_getNextId();
+        $this->setLastId($newIncrementId)->save();
+
+        return $newIncrementId;
+    }
+}

@@ -1,0 +1,106 @@
+<?xml version='1.0'?>
+<config>
+    <modules>
+        <Df_Megapolis>
+             <version>1.0.0</version>
+        </Df_Megapolis>
+    </modules>
+
+
+    <global>
+        <models>
+            <df_megapolis>
+                <class>Df_Megapolis_Model</class>
+            </df_megapolis>
+        </models>
+        <blocks>
+            <df_megapolis>
+                <class>Df_Megapolis_Block</class>
+            </df_megapolis>
+        </blocks>
+        <helpers>
+            <df_megapolis>
+                <class>Df_Megapolis_Helper</class>
+            </df_megapolis>
+        </helpers>
+    </global>
+
+
+	<frontend>
+		<routers>
+			<df-megapolis>
+				<use>standard</use>
+				<args>
+					<module>Df_Megapolis</module>
+					<frontName>df-megapolis</frontName>
+				</args>
+			</df-megapolis>
+		</routers>
+	</frontend>
+
+
+
+
+	<default>
+
+		<carriers>
+			<df-megapolis>
+				<active>0</active>
+				<model>df_megapolis/carrier</model>
+
+				<!--
+					Заголовок для способа доставки.
+					Система отображает его при оформлении доставки
+					над перечнем тарифов данного способа доставки.
+				-->
+				<title>МЕГАПОЛИС</title>
+			</df-megapolis>
+		</carriers>
+
+		<df_shipping>
+			<megapolis>
+				<frontend__disable_for_shop_city>0</frontend__disable_for_shop_city>
+				<frontend__sort_order>0</frontend__sort_order>
+				<admin__declared_value_percent>0</admin__declared_value_percent>
+				<admin__fee_percent>0</admin__fee_percent>
+				<admin__fee_fixed>0</admin__fee_fixed>
+				<frontend__sallowspecific>1</frontend__sallowspecific>
+				<frontend__specificcountry>RU</frontend__specificcountry>
+				<frontend__display_diagnostic_messages>1</frontend__display_diagnostic_messages>
+			</megapolis>
+		</df_shipping>
+	</default>
+
+
+
+
+	<df>
+		<features>
+			<df-megapolis>
+				<module>df_megapolis</module>
+				<title>МЕГАПОЛИС</title>
+				<url>http://magento-forum.ru/forum/211/</url>
+			</df-megapolis>
+		</features>
+
+		<shipping>
+			<megapolis>
+				<allowed-methods>
+					<!--
+						Идентификаторам способов доставки достаточно быть уникальными
+						лишь в пределах модуля доставки,
+						потому что система формирует уникальный идентификатор способа доставки
+						объединением идентификатором модуля доставки и способа доставки.
+					-->
+					<standard>
+						<title>МЕГАПОЛИС</title>
+						<class>df_megapolis/method</class>
+					</standard>
+				</allowed-methods>
+			</megapolis>
+		</shipping>
+
+	</df>
+
+
+</config>

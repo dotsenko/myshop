@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<df_localization>
+										<title>Российская сборка → Русификация</title>
+									</df_localization>
+									<df_tweaks>
+										<title>Российская сборка → Витрина</title>
+									</df_tweaks>
+									<df_tweaks_admin>
+										<title>Российская сборка → Административная часть</title>
+									</df_tweaks_admin>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+
+</config>

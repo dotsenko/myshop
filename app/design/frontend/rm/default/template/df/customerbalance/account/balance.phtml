@@ -1,0 +1,5 @@
+<div class="account-balance">
+<?php echo Mage::helper('df_customerbalance')->__('Your current balance is:'); ?>
+
+<?php echo Mage::helper('core')->currency($this->getBalance()); ?>
+</div>

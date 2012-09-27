@@ -1,0 +1,565 @@
+<?xml version='1.0'?>
+<config>
+    <sections>
+		<df_shipping>
+            <groups>
+            	<dellin translate='label'>
+                    <label>Деловые Линии</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>7000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+					<comment>
+						<![CDATA[
+							Для правильной работы модуля требуется указать единицу веса товаров в графе
+							<br/>«Система» → «Настройки» → «Российская сборка» → «Доставка»
+							 → «Общие настройки» → «Единица веса товаров».
+							<br/>
+							Стоимость доставки службой Деловые Линии зависит от габаритов груза,
+							<br/>поэтому для правильного расчёта стоимости доставки
+							Вам надо вести учёт габаритов каждого товара
+							<br/>(смотрите настройки раздела «Система» → «Настройки» → «Российская сборка» → «Доставка»
+							 → «Общие настройки»).
+						]]>
+					</comment>
+                    <fields>
+
+                    	<active translate='label'>
+                            <label>Включить?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							<df_feature>df-dellin</df_feature>
+							<config_path>carriers/df-dellin/active</config_path>
+                        </active>
+
+
+						<title translate='label'>
+							<label>Заголовок способа доставки для покупателя</label>
+							<comment>
+								<![CDATA[
+									Покупатель видит этот заголовок на этапе оформления заказа,
+									а также в Личном кабинете.
+								]]>
+							</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>2000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<config_path>carriers/df-dellin/title</config_path>
+							<depends>
+								<active>1</active>
+							</depends>
+							<validate>
+								required-entry
+							</validate>
+						</title>
+
+
+						<admin__fee_percent translate='label'>
+							<label>Относительная наценка</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>3000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[
+									в процентах
+								]]>
+							</comment>
+							<validate>
+								validate-digits
+								validate-zero-or-greater
+								validate-percents
+							</validate>
+							<depends>
+								<active>1</active>
+							</depends>
+						</admin__fee_percent>
+
+
+
+						<admin__fee_fixed translate='label'>
+							<label>Абсолютная наценка</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>4000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[
+									в учётной валюте магазина
+								]]>
+							</comment>
+							<validate>
+								validate-digits
+								validate-zero-or-greater
+							</validate>
+							<depends>
+								<active>1</active>
+							</depends>
+						</admin__fee_fixed>
+
+
+
+						<admin__declared_value_percent translate='label'>
+							<label>Объявленная стоимость груза</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>6000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<comment>
+								<![CDATA[
+									В процентах относительно стоимости заказа.
+									<br/>
+									Стоимость страховки на июнь 2012 года
+									составляет 0,14% от объявленной стоимости груза.
+								]]>
+							</comment>
+							<validate>
+								validate-digits
+								validate-zero-or-greater
+							</validate>
+							<depends>
+								<active>1</active>
+							</depends>
+						</admin__declared_value_percent>
+
+
+
+
+						<service__need_get_cargo_from_the_shop_store translate='label'>
+							<label>Должна ли служба доставки приезжать за грузом на склад магазина?</label>
+							<comment>
+								<![CDATA[
+									Укажите значение «<b>да</b>»,
+									если служба доставки должна приезжать за грузом на склад магазина
+									(доставка обойдётся дороже).
+									<br/>
+									Укажите значение «<b>нет</b>»,
+									если магазин сам будет привозить товар на терминал службы доставки
+									(доставка обойдётся дешевле).
+									<br/>
+									Обратите внимание, что терминалы службы Деловые Линии
+									присутствуют не в каждом населённом пункте.
+									<br/>
+									Если терминала в населённом пункте, то значение данной опции игнорируется,
+									и служба доставки всегда приезжает за грузом на склад магазина.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>7000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_get_cargo_from_the_shop_store>
+
+
+
+
+						<service__need_deliver_cargo_to_the_buyer_home translate='label'>
+							<label>Должна ли служба доставки доставлять товар до дома покупателя?</label>
+							<comment>
+								<![CDATA[
+									Укажите значение «<b>да</b>»,
+									если служба доставки должна доставлять товар до дома покупателя
+									(доставка обойдётся дороже).
+									<br/>
+									Укажите значение «<b>нет</b>»,
+									если покупатели сами будут забирать товар
+									из терминала службы доставки в своём городе (доставка обойдётся дешевле).
+									<br/>
+									Обратите внимание, что терминалы службы Деловые Линии
+									присутствуют не в каждом населённом пункте.
+									Если терминала в населённом пункте,
+									то значение данной опции игнорируется,
+									и служба доставки доставит товар домой покупателю.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>8000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_deliver_cargo_to_the_buyer_home>
+
+
+
+
+						<service__need_soft_packing translate='label'>
+							<label>Нужна ли мягкая упаковка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>9000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_soft_packing>
+
+
+
+
+						<service__need_rigid_container translate='label'>
+							<label>Нужна ли жёсткая упаковка?</label>
+							<comment>
+								<![CDATA[
+									Жёсткая упаковка может понадобиться товару, если:
+									<br/>* Товар хрупок
+									<br/>* Товар может нанести вред соседним грузам
+									<br/>Жёсткая упаковка представляет собой деревянный ящик
+									с крестообразными стенами.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>10000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_rigid_container>
+
+
+
+						<service__need_additional_packing translate='label'>
+							<label>Нужна ли дополнительная упаковка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>11000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_additional_packing>
+
+
+
+
+						<service__need_bag_packing translate='label'>
+							<label>Нужна ли упаковки груза в мешок?</label>
+							<comment>
+								<![CDATA[
+									Стоимость мешка на июнь 2012 года: 50 рублей.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>12000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_bag_packing>
+
+
+
+						<service__need_collapsible_pallet_box translate='label'>
+							<label>
+								Нужен ли для груза поддон с деревянными съёмными ограждениями
+								(евроборт, паллетный борт)?
+							</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>13000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_collapsible_pallet_box>
+
+
+
+
+						<service__need_side_casting_at_origin translate='label'>
+							<label>Нужна ли боковая погрузка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>14000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_side_casting_at_origin>
+
+
+
+						<service__need_top_casting_at_origin translate='label'>
+							<label>Нужна ли верхняя погрузка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>15000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_top_casting_at_origin>
+
+
+
+
+						<service__need_cargo_tail_loader_at_origin translate='label'>
+							<label>Нужен ли для погрузки гидравлический подъёмник?</label>
+							<comment>
+								<![CDATA[
+									Гидравлический подъёмник предназначен для погрузки в машину
+									и выгрузки из машины тяжёлых грузов.
+									<br/>
+									Включите эту опцию, если Вы торгуете тяжёлым товаром
+									(предварительно спросите у службы Деловые Линии,
+									нужен ли для Вашего товара гидравлический подъёмник)
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>16000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_cargo_tail_loader_at_origin>
+
+
+
+
+						<service__need_open_car_at_origin translate='label'>
+							<label>Нужна ли открытая машина для погрузки?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>17000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_open_car_at_origin>
+
+
+
+
+						<service__need_remove_awning_at_origin translate='label'>
+							<label>Нужна ли растентовка при погрузке?</label>
+							<comment>
+								<![CDATA[
+									Растентовка — это снятие тента с грузового автомобиля.
+									Растентовка необходима,
+									когда груз невозможно поместить в машину традиционным способом —
+									с задней стороны кузова.
+									Растентовка позволяет выполнить погрузку и разгрузку сверху или сбоку фуры.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>18000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_remove_awning_at_origin>
+
+
+
+
+						<service__need_side_casting_at_destination translate='label'>
+							<label>Нужна ли боковая выгрузка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>19000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_side_casting_at_destination>
+
+
+
+						<service__need_top_casting_at_destination translate='label'>
+							<label>Нужна ли верхняя выгрузка?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>20000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_top_casting_at_destination>
+
+
+
+
+						<service__need_manipulator_at_destination translate='label'>
+							<label>Нужен ли манипулятор при выгрузке?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>21000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_manipulator_at_destination>
+
+
+
+
+						<service__need_open_car_at_destination translate='label'>
+							<label>Нужна ли открытая машина для выгрузки?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>22000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</service__need_open_car_at_destination>
+
+
+
+
+
+						<frontend__disable_for_shop_city translate='label'>
+							<label>Скрыть этот способ доставки для покупателей из города магазина?</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>23000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</frontend__disable_for_shop_city>
+
+
+
+
+						<frontend__sort_order translate='label'>
+							<label>Вес для упорядочивания</label>
+							<comment>
+								<![CDATA[
+									Когда системе требуется перечислить способы доставки на экране,
+									она упорядочивает их в соответствии с их весами.
+									<br/>Способы с меньшим весом отображаются выше способов с большим весом.
+									<br/>Веса задаются натуральными числами.
+								]]>
+							</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>24000</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</frontend__sort_order>
+
+
+
+						<frontend__display_diagnostic_messages translate='label'>
+							<label>Показывать ли способ доставки на витрине в том случае,
+								когда он по каким-либо причинам неприменим к текущему заказу?</label>
+							<comment>
+								<![CDATA[
+									Если Вы укажете значение «да», то покупатель будет знать причину,
+									по которой данный способ доставки неприменим к его заказу.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>25000</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</frontend__display_diagnostic_messages>
+
+
+
+						<frontend__sallowspecific translate='label'>
+							<label>Ограничить область доставки конкретными странами?</label>
+							<comment>
+								<![CDATA[
+									Если Вы укажете значение «да», то система запросит у Вас перечень стран,
+									куда разрешена доставка данным способом.
+									<br/>Во все неперечисленные Вами страны
+									доставка данным способом осуществляться не будет.
+								]]>
+							</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>26000</sort_order>
+							<frontend_class>shipping-applicable-country</frontend_class>
+							<source_model>adminhtml/system_config_source_shipping_allspecificcountries</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<depends>
+								<active>1</active>
+							</depends>
+						</frontend__sallowspecific>
+
+						
+						<frontend__specificcountry translate='label'>
+							<label>Перечень стран, куда разрешена доставка данным способом</label>
+							<frontend_type>multiselect</frontend_type>
+							<sort_order>27000</sort_order>
+							<source_model>adminhtml/system_config_source_country</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<can_be_empty>1</can_be_empty>
+							<depends>
+								<active>1</active>
+								<frontend__sallowspecific>1</frontend__sallowspecific>
+							</depends>
+						</frontend__specificcountry>
+
+					</fields>
+				</dellin>
+			</groups>
+		</df_shipping>
+	</sections>
+</config>

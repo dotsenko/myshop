@@ -1,0 +1,43 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Body_Table_Totals $this */ ?>
+<tr class='df-footer'>
+	<td colspan='7' class='df-label'>Всего по накладной</td>
+	<td>
+		<?php echo intval ($this->getOrder()->getTotalQtyOrdered()); ?>
+	</td>
+	<td><?php echo $this->getNetWeightAsString (); ?></td>
+	<td><?php echo $this->getNetWeightAsString (); ?></td>
+	<td>X</td>
+	<td>
+		<?php
+			echo
+				$this->formatPrice (
+						$this->getOrder()->getSubtotalInclTax()
+					-
+						$this->getOrder()->getTaxAmount()
+				)
+			;
+		?>
+	</td>
+	<td>X</td>
+	<td>
+		<?php
+			echo
+				$this->formatPrice (
+					$this->getOrder()->getTaxAmount()
+				)
+			;
+		?>
+	</td>
+	<td>
+		<?php
+			echo
+				/**
+				 * Нельзя включать в ТОРГ-12 стоимость доставки
+				 */
+				$this->formatPrice (
+					$this->getOrder()->getSubtotalInclTax()
+				)
+			;
+		?>
+	</td>
+</tr>

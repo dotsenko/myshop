@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<layout version='0.1.0'>
+
+	<default>
+		<reference name='head'>
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_js</type>
+				<name>cmspro/js/accordion.js</name>
+			</action>
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_js</type>
+				<name>cmspro/js/accordion_menu.js</name>
+			</action>
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_js</type>
+				<name>cmspro/js/hoverIntent.js</name>
+			</action>
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_js</type>
+				<name>cmspro/js/superfish.js</name>
+			</action>
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_js</type>
+				<name>cmspro/js/jquery-accordion-menu.js</name>
+			</action>
+
+			<action method='addCss' ifconfig='df_cmspro/info/enabled'>
+				<stylesheet>cmspro/css/smartmenu.css</stylesheet>
+			</action>
+			<action method='addCss' ifconfig='df_cmspro/info/enabled'>
+				<stylesheet>cmspro/css/superfish.css</stylesheet>
+			</action>
+			<action method='addCss' ifconfig='df_cmspro/info/enabled'>
+				<stylesheet>cmspro/css/superfish-vertical.css</stylesheet>
+			</action>
+
+			<action method='addCss' ifconfig='df_cmspro/info/enabled'>
+				<stylesheet>css/cmspro/cmspro.css</stylesheet>
+			</action>
+
+			<action method='addItem' ifconfig='df_cmspro/info/enabled'>
+				<type>skin_css</type>
+				<name>css/cmspro-iestyles.css</name>
+				<params/>
+				<if>lt IE 8</if>
+			</action>
+		</reference>
+
+
+
+		<reference name='left'>
+			<block type='df_cmspro/category' name='cmspro.categories.accordin_left'
+				   template='df/cmspro/category/accordion_left.phtml' before='-'/>
+			<block type='df_cmspro/category' name='cmspro.categories.dropdown_left'
+				   template='df/cmspro/category/dropdown_left.phtml' before='-'/>
+			<block type='df_cmspro/feature' name='cmspro.news.latest' template='df/cmspro/block/latest.phtml'
+				   before='-'/>
+			<block type='df_cmspro/feature' name='cmspro.news.featured' template='df/cmspro/block/featured.phtml'
+				   before='-'/>
+		</reference>
+
+
+		<reference name='right'>
+			<block type='df_cmspro/category' name='cmspro.categories.accordin_right'
+				   template='df/cmspro/category/accordion_right.phtml' before='-'/>
+			<block type='df_cmspro/category' name='cmspro.categories.dropdown_right'
+				   template='df/cmspro/category/dropdown_right.phtml' before='-'/>
+		</reference>
+
+
+	</default>
+
+
+	<cmspro_index_index>
+
+		<reference name='root'>
+			<action method='setTemplate'>
+				<template>page/2columns-left.phtml</template>
+			</action>
+		</reference>
+
+		<reference name='left'>
+			<!-- <block type='df_cmspro/search' name='cmspro.categories.search' template='df/cmspro/search/search.phtml' before='-' /> -->
+		</reference>
+
+
+		<reference name='content'>
+			<block type='df_cmspro/feature' name='cmspro.news.feature' template='df/cmspro/block/feature.phtml'></block>
+			<block type='df_cmspro/list' name='cmspro.list' template='df/cmspro/list/list.phtml'/>
+		</reference>
+	</cmspro_index_index>
+
+
+	<cmspro_search_result>
+		<reference name='left'>
+			<!-- <block type='df_cmspro/search' name='cmspro.search' template='df/cmspro/search/search.phtml' before='-' /> -->
+		</reference>
+		<reference name='content'>
+			<block type='df_cmspro/search' name='cmspro.result' template='df/cmspro/search/result.phtml'/>
+		</reference>
+	</cmspro_search_result>
+
+
+	<cmspro_view_details>
+
+		<reference name='root'>
+			<action method='setTemplate'>
+				<template>page/2columns-left.phtml</template>
+			</action>
+		</reference>
+
+		<reference name='left'>
+			<!-- <block type='df_cmspro/search' name='cmspro.search' template='df/cmspro/search/search.phtml' before='-' /> -->
+		</reference>
+		<reference name='content'>
+			<block type='df_cmspro/view' name='cmspro.view' template='df/cmspro/view.phtml'/>
+		</reference>
+	</cmspro_view_details>
+
+
+	<cmspro_category_view>
+
+		<reference name='root'>
+			<action method='setTemplate'>
+				<template>page/2columns-left.phtml</template>
+			</action>
+		</reference>
+
+
+		<reference name='left'>
+			<!--
+					   <block type='df_cmspro/search' name='cmspro.search' template='df/cmspro/search/search.phtml' before='-' />
+					   -->
+		</reference>
+
+
+		<reference name='content'>
+			<block type='df_cmspro/list' name='cmspro.view' template='df/cmspro/list/list.phtml'/>
+		</reference>
+
+
+	</cmspro_category_view>
+
+
+</layout> 

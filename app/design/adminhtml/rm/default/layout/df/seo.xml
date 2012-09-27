@@ -1,0 +1,8 @@
+<?xml version='1.0'?>
+<layout>
+    <df_seo_rebuild_index>
+        <reference name='content'>
+			<block type='core/template' template='df/seo/rebuild/index.phtml' />
+        </reference>
+    </df_seo_rebuild_index>
+</layout>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Df_Seo>
+			<version>2011-03-16</version>
+		</Df_Seo>
+	</modules>
+
+	<df>
+		<seo>
+			<template>
+				<objects>
+					<product>
+						<name>product</name>
+						<adapter>df_seo/template_adapter_product</adapter>
+						<properties>
+							<category>df_seo/template_property_product_category</category>
+							<default>df_seo/template_property_product_default</default>
+							<price>df_seo/template_property_product_price</price>
+						</properties>
+					</product>
+				</objects>
+			</template>
+		</seo>
+	</df>
+
+	<global>
+		<helpers>
+			<df_seo>
+				<class>Df_Seo_Helper</class>
+			</df_seo>
+		</helpers>
+
+		<models>
+			<df_seo>
+				<class>Df_Seo_Model</class>
+			</df_seo>
+		</models>
+		<events>
+			<clean_catalog_images_cache_after>
+				<observers>
+					<df_seo_controller_front_init_before>
+						<type>singleton</type>
+						<class>df_seo/observer</class>
+						<method>clean_catalog_images_cache_after</method>
+					</df_seo_controller_front_init_before>
+				</observers>
+			</clean_catalog_images_cache_after>
+		</events>
+	</global>
+
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <df_seo>
+                    <file>df/seo.xml</file>
+                </df_seo>
+            </updates>
+        </layout>
+    </adminhtml>
+
+
+	<default>
+		<df_seo>
+			<catalog_category>
+				<hide_description_from_non_first_pages>0</hide_description_from_non_first_pages>
+			</catalog_category>
+		</df_seo>
+	</default>
+
+</config>

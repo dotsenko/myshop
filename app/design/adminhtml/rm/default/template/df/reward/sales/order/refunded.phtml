@@ -1,0 +1,7 @@
+
+<?php if ((float) $this->getSource()->getRewardPointsBalanceToRefund()): ?>
+    <tr>
+        <td class="label"><strong><?php echo df_helper()->reward()->__('Reward Points refunded to customer') ?></strong></td>
+        <td><strong><?php echo $this->getSource()->getRewardPointsBalanceToRefund(); ?></strong></td>
+    </tr>
+<?php endif; ?>

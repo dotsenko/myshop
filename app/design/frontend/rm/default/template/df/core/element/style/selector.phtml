@@ -1,0 +1,20 @@
+<?php /** @var Df_Core_Block_Element_Style_Selector $this */ ?>
+
+<?php echo $this->getSelector(); ?> {
+<?php
+
+	/** @var Df_Core_Model_Output_Css_Rule_Set $ruleSet  */
+	$ruleSet = $this->getRuleSet();
+
+	echo
+		implode (
+			Df_Core_Const::T_EMPTY
+			,
+			array_map (
+				'df_prepend_tab'
+				,
+				$ruleSet->walk ('getText', array ($inline = false))
+			)
+		)
+	;
+?>}

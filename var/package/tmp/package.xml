@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Custom_Layered_Navigation</name>
+    <version>1.1.1406</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Change style of Magento layered navigation</summary>
+    <description>Change style of Layered navigation to dropdown select box or radio box.
+
+Select some of customized style for radio box.
+
+Easy to select custom or default style for layered navigation in admin panel.</description>
+    <notes>First release</notes>
+    <authors><author><name>Hoang Viet</name><user>auto-converted</user><email>hien.tran@mageex.com</email></author></authors>
+    <date>2011-06-14</date>
+    <time>10:23:21</time>
+    <contents><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><file name="styles.css" hash="983f121e88596d9dd74d5d212c39a988"/></dir><dir name="images"><file name="transparent_bg.png" hash="97196aa0ed0309c20a86ade933f837fa"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="page.xml" hash="5449b320335d4f81cd8e775607d7c939"/></dir><dir name="template"><dir name="catalog"><dir name="layer"><file name="filter.phtml" hash="5c90049fad42c68d62ef5e61404d4870"/><file name="view.phtml" hash="7bb4a676dbd0e785a83572918439ae6b"/></dir></dir></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="layernav"><file name="fancyboxes.js" hash="d11064cea5ef744ed0170059d9c5ad1b"/><file name="jquery-1.4.2.min.js" hash="65b352e1ba79f0e2a3b1e014bc2571af"/><file name="jquery-noconflict.js" hash="3179f2255b046d5f2e9a71e365287bef"/></dir></dir></target><target name="magemedia"><dir name="layernav"><file name="loading.gif" hash="4fca770c945a1806941b9f526875a979"/></dir></target><target name="magecommunity"><dir><dir name="Mageex"><dir name="Layernav"><dir name="etc"><file name="config.xml" hash="6c433df7ecfbaaf5de68c4ec2c5a1e2a"/><file name="system.xml" hash="5742953a95126277af0b3f2dbd0094e6"/></dir><dir name="Helper"><file name="Data.php" hash="2c97dfe32b9ab4c24b202c080d9b0c4c"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Stylefc.php" hash="be972e24d4e7d06985ca45bfeb95ac5f"/><file name="Type.php" hash="a0246215d7a7707f524b26ce46a9126c"/></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

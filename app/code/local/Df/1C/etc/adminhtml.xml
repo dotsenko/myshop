@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<rm>
+						<title>Российская сборка</title>
+						<children>
+							<_1c translate='title' module='review'>
+								<title>1С: Управление торговлей</title>
+							</_1c>
+						</children>
+					</rm>
+					<system>
+						<children>
+							<config>
+								<children>
+									<df_1c>
+										<title>Российская сборка → 1С: Управление торговлей</title>
+									</df_1c>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

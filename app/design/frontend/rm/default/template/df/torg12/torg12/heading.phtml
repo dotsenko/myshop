@@ -1,0 +1,337 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Heading $this */ ?>
+
+<div class='df-heading'>
+
+	<div class='df-heading-left'>
+
+		<ul class='df-rows'>
+
+			<li class='df-row df-row-1'>
+
+				<div class='df-shipper'>
+					<div class='df-input df-input-with-2-lines'>
+						<?php echo df_cfg()->torg12()->getConsignorName(); ?>
+					</div>
+
+					<div class='df-label-with-line df-line-thick'>
+						(организация-грузоотправитель, адрес, телефон, факс, банковские реквизиты)
+					</div>
+				</div>
+
+			</li>
+
+
+
+			<li class='df-row df-row-2'>
+
+				<div class='df-shipper-division'>
+					<div class='df-input'>
+						<?php
+							//echo df_cfg()->torg12()->getConsignorSubdivision();
+							echo $this->getEmptyValue();
+						?>
+					</div>
+
+					<div class='df-label-with-line'>
+						(структурное подразделение)
+					</div>
+				</div>
+
+			</li>
+
+
+
+
+			<li class='df-row df-row-3 df-row-consignee'>
+
+				<div class='df-field-with-left-label'>
+
+					<div class='df-label'>
+						Грузополучатель
+					</div>
+
+					<div class='df-input-container'>
+
+						<div class='df-input df-input-with-2-lines'>
+							<div class='df-text'>
+								<?php echo $this->getShippingAddressFormatter()->getAsText(); ?>
+							</div>
+						</div>
+
+						<div class='df-label-with-line df-line-thick'>
+							(организация, адрес, телефон, факс, банковские реквизиты)
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+
+
+
+
+			<li class='df-row df-row-4'>
+
+				<div class='df-field-with-left-label'>
+
+					<div class='df-label'>
+						Поставщик
+					</div>
+
+					<div class='df-input-container'>
+
+						<div class='df-input df-input-with-2-lines'>
+							<?php echo df_cfg()->torg12()->getSupplierName(); ?>
+						</div>
+
+						<div class='df-label-with-line'>
+							(организация, адрес, телефон, факс, банковские реквизиты)
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+
+
+
+
+			<li class='df-row df-row-5'>
+
+				<div class='df-field-with-left-label'>
+
+					<div class='df-label'>
+						Плательщик
+					</div>
+
+					<div class='df-input-container'>
+
+						<div class='df-input df-input-with-2-lines'>
+							<div class='df-text'>
+								<?php echo $this->getBillingAddressFormatter()->getAsText(); ?>
+							</div>
+						</div>
+
+						<div class='df-label-with-line df-line-thick'>
+							(организация, адрес, телефон, факс, банковские реквизиты)
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+
+
+
+
+			<li class='df-row df-row-6'>
+
+				<div class='df-field-with-left-label'>
+
+					<div class='df-label'>
+						Основание
+					</div>
+
+					<div class='df-input-container'>
+
+						<div class='df-input df-input-with-1-line'>
+							По счёту №155 от 09.04.08 г.
+							По счёту №155 от 09.04.08 г.
+							По счёту №155 от 09.04.08 г.
+						</div>
+
+						<div class='df-label-with-line'>
+							 (договор, заказ-наряд)
+						</div>
+					</div>
+
+				</div>
+
+			</li>
+		</ul>
+
+	</div>
+
+
+
+
+	<div class='df-heading-right'>
+
+		<ul class='df-rows'>
+
+
+			<li class='df-row df-row-1'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						Код
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-2'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						0330212
+					</li>
+					<li class='df-field df-field-label'>
+						Форма по ОКУД
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-3'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						<?php echo df_cfg()->torg12()->getConsignorOkpo(); ?>
+					</li>
+					<li class='df-field df-field-label'>
+						по ОКПО
+					</li>
+				</ul>
+			</li>
+
+
+			<li class='df-row df-row-4'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						&nbsp;
+					</li>
+					<li class='df-field df-field-label'>
+						&nbsp;
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-5'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						<?php echo $this->getEmptyValue(4); ?>
+					</li>
+					<li class='df-field df-field-label'>
+						Вид деятельности по ОКДП
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-6'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						<?php echo $this->getEmptyValue(4); ?>
+					</li>
+					<li class='df-field df-field-label'>
+						по ОКПО
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-7'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						<?php echo df_cfg()->torg12()->getSupplierOkpo(); ?>
+					</li>
+					<li class='df-field df-field-label'>
+						по ОКПО
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-8'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						<?php echo $this->getEmptyValue(4); ?>
+					</li>
+					<li class='df-field df-field-label'>
+						по ОКПО
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-9'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						93653451
+					</li>
+					<li class='df-field df-field-label df-field-label-1'>
+						номер
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-10'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						93653451
+					</li>
+					<li class='df-field df-field-label df-field-label-1'>
+						дата
+					</li>
+				</ul>
+			</li>
+
+
+
+
+			<li class='df-row df-row-11'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						93653451
+					</li>
+					<li class='df-field df-field-label df-field-label-1'>
+						номер
+					</li>
+					<li class='df-field df-field-label df-field-label-2'>
+						Транспортная накладная
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class='df-row df-row-12'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						93653451
+					</li>
+					<li class='df-field df-field-label df-field-label-1'>
+						дата
+					</li>
+				</ul>
+			</li>
+
+
+
+
+			<li class='df-row df-row-13'>
+				<ul class='df-fields'>
+					<li class='df-field df-field-value'>
+						&nbsp;
+					</li>
+					<li class='df-field df-field-label'>
+						Вид операции
+					</li>
+				</ul>
+			</li>
+
+
+
+		</ul>
+
+	</div>
+
+</div>

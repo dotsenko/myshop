@@ -1,0 +1,131 @@
+<?xml version='1.0'?>
+<config>
+    <modules>
+        <Df_Torg12>
+            <version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+        </Df_Torg12>
+    </modules>
+
+
+
+	<df>
+		<features>
+			<df-torg12>
+				<module>df_torg12</module>
+				<title>ТОРГ-12</title>
+
+				<!--
+					TODO: поместить сюда правильную ссылку на документацию к модулю
+				-->
+				<url>http://magento-forum.ru/russian</url>
+			</df-torg12>
+		</features>
+	</df>
+
+
+
+
+
+	<global>
+
+		<blocks>
+			<df_torg12>
+				<class>Df_Torg12_Block</class>
+			</df_torg12>
+		</blocks>
+
+		<helpers>
+			<df_torg12>
+				<class>Df_Torg12_Helper</class>
+			</df_torg12>
+		</helpers>
+
+		<models>
+			<df_torg12>
+				<class>Df_Torg12_Model</class>
+			</df_torg12>
+		</models>
+
+
+	</global>
+
+
+
+
+    <frontend>
+        <routers>
+            <df_torg12>
+                <use>standard</use>
+                <args>
+                    <module>Df_Torg12</module>
+                    <frontName>df-torg12</frontName>
+                </args>
+            </df_torg12>
+        </routers>
+
+        <layout>
+            <updates>
+				<df_torg12 module='Df_Torg12'>
+					<file>df/torg12.xml</file>
+				</df_torg12>
+            </updates>
+        </layout>
+
+    </frontend>
+
+
+
+	<adminhtml>
+		<events>
+			<core_layout_block_create_after>
+				<observers>
+					<df_torg12__core_layout_block_create_after>
+						<class>df_torg12/dispatcher</class>
+						<method>core_layout_block_create_after</method>
+					</df_torg12__core_layout_block_create_after>
+				</observers>
+			</core_layout_block_create_after>
+		</events>
+	</adminhtml>
+
+
+
+
+
+    <default>
+		<df_torg12>
+			<torg12>
+				<!--
+					Российская сборка придерживается политики, что новые функции Российской сборки
+					должны быть по умолчанию отключены
+					(если только нет критически-важной необходимости их включения)
+				-->
+				<enabled>0</enabled>
+				<consignor><![CDATA[ООО "Рога и Копыта", ИНН 5029089272, 141021, МО, г. Мытищи, ул Юбилейная, д. 37, корп. 1, офис 92, тел. (495) 609-66-91, р/c 40702810800000002270 в КБ "Легион" (ООО), БИК 044583373, корр/c 3010181020000000373]]></consignor>
+				<consignor_okpo>93652451</consignor_okpo>
+				<supplier_okpo>13780407</supplier_okpo>
+				<consignor_subdivision><![CDATA[]]></consignor_subdivision>
+				<supplier><![CDATA[ООО "Рога и Копыта", ИНН 5029089272, 141021, МО, г. Мытищи, ул Юбилейная, д. 37, корп. 1, офис 92, тел. (495) 609-66-91, р/c 40702810800000002270 в КБ "Легион" (ООО), БИК 044583373, корр/c 3010181020000000373]]></supplier>
+				<reason><![CDATA[Заказ в интернет-магазине "Рога и копыта"]]></reason>
+				<accountant>Иванов А. А.</accountant>
+				<manager>Петров Б. Б.</manager>
+				<manager_position>генеральный директор</manager_position>
+				<giver>Сидоров В. В.</giver>
+				<giver_position>кладовщик</giver_position>
+				<default_unit_name>шт.</default_unit_name>
+				<default_unit_code>796</default_unit_code>
+				<default_package_name>кор.</default_package_name>
+				<default_product_weight_unit>кг.</default_product_weight_unit>
+				<document_weight_unit>кг.</document_weight_unit>
+				<weight_precision>3</weight_precision>
+				<default_vat>18</default_vat>
+				<num_rows_on_first_page>5</num_rows_on_first_page>
+			</torg12>
+		</df_torg12>
+	</default>
+
+
+
+
+</config>

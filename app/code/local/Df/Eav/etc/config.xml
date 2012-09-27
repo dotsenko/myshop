@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Eav>
+            <version>1.0.0</version>
+        </Df_Eav>
+    </modules>
+
+	<global>
+		<helpers>
+			<df_eav>
+				<class>Df_Eav_Helper</class>
+			</df_eav>
+		</helpers>
+
+		<models>
+			<df_eav>
+				<class>Df_Eav_Model</class>
+			</df_eav>
+
+			<eav>
+				<rewrite>
+					<config>Df_Eav_Model_Config</config>
+				</rewrite>
+			</eav>
+
+
+			<!-- Для Magento версии меньше 1.6 -->
+			<eav_mysql4>
+				<rewrite>
+					<entity_attribute_option_collection>Df_Eav_Model_Resource_Entity_Attribute_Option_Collection</entity_attribute_option_collection>
+				</rewrite>
+			</eav_mysql4>
+
+
+			<!-- Для Magento версии 1.6 и выше -->
+			<eav_resource>
+				<rewrite>
+					<entity_attribute_option_collection>Df_Eav_Model_Resource_Entity_Attribute_Option_Collection</entity_attribute_option_collection>
+				</rewrite>
+			</eav_resource>
+
+		</models>
+	</global>
+
+
+
+
+	<adminhtml>
+
+		<events>
+
+			<eav_entity_attribute_load_after>
+				<observers>
+					<df_eav__eav_entity_attribute_load_after>
+                        <class>df_eav/dispatcher</class>
+                        <method>eav_entity_attribute_load_after</method>
+					</df_eav__eav_entity_attribute_load_after>
+				</observers>
+			</eav_entity_attribute_load_after>
+
+
+			<catalog_entity_attribute_load_after>
+				<observers>
+					<df_eav__eav_entity_attribute_load_after>
+                        <class>df_eav/dispatcher</class>
+                        <method>eav_entity_attribute_load_after</method>
+					</df_eav__eav_entity_attribute_load_after>
+				</observers>
+			</catalog_entity_attribute_load_after>
+
+
+			<core_collection_abstract_load_after>
+				<observers>
+					<df_eav__core_collection_abstract_load_after>
+                        <class>df_eav/dispatcher</class>
+                        <method>core_collection_abstract_load_after</method>
+					</df_eav__core_collection_abstract_load_after>
+				</observers>
+			</core_collection_abstract_load_after>
+		</events>
+
+
+        <translate>
+			<modules>
+				<Df_Eav>
+					<files>
+						<default>Df_Eav.csv</default>
+					</files>
+				</Df_Eav>
+			</modules>
+		</translate>
+
+	</adminhtml>
+
+
+
+	<frontend>
+        <translate>
+			<modules>
+				<Df_Eav>
+					<files>
+						<default>Df_Eav.csv</default>
+					</files>
+				</Df_Eav>
+			</modules>
+		</translate>
+	</frontend>
+
+
+
+</config>

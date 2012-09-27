@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Sales>
+            <version>1.0.0</version>
+        </Df_Sales>
+    </modules>
+
+
+	<df>
+		<features>
+			<df-sales>
+				<module>df_sales</module>
+				<title>Продажи</title>
+				<url>http://magento-forum.ru/forum/149/</url>
+			</df-sales>
+		</features>
+	</df>
+
+
+	<global>
+		<blocks>
+			<df_sales>
+				<class>Df_Sales_Block</class>
+			</df_sales>
+			<sales>
+				<rewrite>
+					<order_view>Df_Sales_Block_Order_View</order_view>
+				</rewrite>
+			</sales>
+		</blocks>
+
+		<helpers>
+			<df_sales>
+				<class>Df_Sales_Helper</class>
+			</df_sales>
+
+
+			<sales>
+				<rewrite>
+					<guest>Df_Sales_Helper_Guest</guest>
+				</rewrite>
+			</sales>
+		</helpers>
+
+		<models>
+			<df_sales>
+				<class>Df_Sales_Model</class>
+			</df_sales>
+
+            <sales>
+                <rewrite>
+                    <order>Df_Sales_Model_Order</order>
+					<order_address>Df_Sales_Model_Order_Address</order_address>
+					<quote_address>Df_Sales_Model_Quote_Address</quote_address>
+                </rewrite>
+            </sales>
+		</models>
+
+		<events>
+			<core_copy_fieldset_customer_address_to_quote_address>
+				<observers>
+					<df_sales__core_copy_fieldset_customer_address_to_quote_address>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>core_copy_fieldset_customer_address_to_quote_address</method>
+					</df_sales__core_copy_fieldset_customer_address_to_quote_address>
+				</observers>
+			</core_copy_fieldset_customer_address_to_quote_address>
+
+
+
+			<sales_convert_order_to_quote>
+				<observers>
+					<df_sales__sales_convert_order_to_quote>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>sales_convert_order_to_quote</method>
+					</df_sales__sales_convert_order_to_quote>
+				</observers>
+			</sales_convert_order_to_quote>
+
+
+
+
+			<sales_order_status_history_save_before>
+				<observers>
+					<df_sales__sales_order_status_history_save_before>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>sales_order_status_history_save_before</method>
+					</df_sales__sales_order_status_history_save_before>
+				</observers>
+			</sales_order_status_history_save_before>
+
+
+
+			<sales_quote_address_save_before>
+				<observers>
+					<df_sales__quote_address_save_before>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>sales_quote_address_save_before</method>
+					</df_sales__quote_address_save_before>
+				</observers>
+			</sales_quote_address_save_before>
+
+
+		</events>
+
+	</global>
+
+
+
+
+	<adminhtml>
+		<events>
+			<!--
+				Мы не используем событие _load_before,
+				потому что не все коллекции заказов используются для таблицы заказов,
+				а в Magento 1.4 по коллекции невозможно понять,
+				используется ли она для таблицы заказов или нет
+				(в более поздних версиях Magento понять можно, потому что
+				коллекция, используемая для таблицы заказов, принадлежит особому классу)
+			-->
+			<df_adminhtml_block_sales_order_grid__prepare_collection>
+				<observers>
+					<df_sales__df_adminhtml_block_sales_order_grid__prepare_collection>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>df_adminhtml_block_sales_order_grid__prepare_collection</method>
+					</df_sales__df_adminhtml_block_sales_order_grid__prepare_collection>
+				</observers>
+			</df_adminhtml_block_sales_order_grid__prepare_collection>
+
+
+			<df_adminhtml_block_sales_order_grid__prepare_columns_after>
+				<observers>
+					<df_sales__df_adminhtml_block_sales_order_grid__prepare_columns_after>
+						<type>singleton</type>
+						<class>df_sales/dispatcher</class>
+						<method>df_adminhtml_block_sales_order_grid__prepare_columns_after</method>
+					</df_sales__df_adminhtml_block_sales_order_grid__prepare_columns_after>
+				</observers>
+			</df_adminhtml_block_sales_order_grid__prepare_columns_after>
+
+		</events>
+	</adminhtml>
+
+
+
+	<default>
+
+		<sales>
+			<msrp>
+				<explanation_message>
+					<![CDATA[
+						Цена нашего магазина на этот товар ниже цены,
+						по которой мы, по договору с нашим поставщиком,
+						имеем право публично выставлять на витрине данный товар.
+						<br/>
+						Чтобы увидеть реальную цену на товар — положите его корзину.
+					]]>
+				</explanation_message>
+
+				<explanation_message_whats_this>
+					<![CDATA[
+						Цена нашего магазина на этот товар ниже цены,
+						по которой мы, по договору с нашим поставщиком,
+						имеем право публично выставлять на витрине данный товар.
+						<br/>
+						Чтобы увидеть реальную цену на товар — положите его корзину.
+					]]>
+				</explanation_message_whats_this>
+
+			</msrp>
+		</sales>
+
+
+		<df_sales>
+
+			<order_comments>
+				<admin_order_create__comment_is_visible_on_front>0</admin_order_create__comment_is_visible_on_front>
+				<preserve_comment_line_breaks_in_customer_account>0</preserve_comment_line_breaks_in_customer_account>
+				<preserve_line_breaks_in_order_email>0</preserve_line_breaks_in_order_email>
+				<preserve_comment_line_breaks_in_admin_order_view>0</preserve_comment_line_breaks_in_admin_order_view>
+				<preserve_some_tags_in_order_comments_in_admin_order_view>0</preserve_some_tags_in_order_comments_in_admin_order_view>
+				<tags_to_preserve_in_admin_order_view>br,h3,div,ul,li</tags_to_preserve_in_admin_order_view>
+				<wrap_in_standard_frame_in_order_email>0</wrap_in_standard_frame_in_order_email>
+			</order_comments>
+
+			<order_grid__product_column>
+				<enabled>0</enabled>
+				<ordering>3</ordering>
+				<show_all_products>1</show_all_products>
+				<max_products_to_show>3</max_products_to_show>
+				<show_name>1</show_name>
+				<chop_name>0</chop_name>
+				<product_name_max_length>50</product_name_max_length>
+				<show_sku>0</show_sku>
+				<show_qty>0</show_qty>
+
+				<name_width>70</name_width>
+				<sku_width>25</sku_width>
+				<qty_width>5</qty_width>
+
+				<order_by>name</order_by>
+				<order_direction>ASC</order_direction>
+
+			</order_grid__product_column>
+		</df_sales>
+	</default>
+
+
+</config>

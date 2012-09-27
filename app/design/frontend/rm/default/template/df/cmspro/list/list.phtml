@@ -1,0 +1,56 @@
+
+<div class="clear"></div>
+
+<?php $news = $this->getNews(); ?>
+<?php
+    if($news->count() < 1):
+?>
+	<div class="postWrapper">
+	<p><?php echo df_helper()->cmspro()->__('Not found news'); ?></p>
+	</div>
+	<?php
+	    else:
+	    $newsThumbnailSize = $this->getNewsThumbnailSize();
+	?>
+	<div class="postWrapper">
+	<?php
+
+		foreach ($news as $n){
+		/** @var Df_Cmspro_Model_News $n  */
+		$url = Mage::getModel('core/url_rewrite')->load($n->getUrlRewriteId());
+		?>
+		<div class="cmspro_list_item">
+		    <div class="cmspro_list_content">
+
+			    <?php
+			    	if (!df_empty ($n->getImages())) {
+			            ?>
+							<div class="cmspro_list_images">
+								<img src="<?php echo $this->helper('df_cmspro/image')->init($n->getImages())->resize($newsThumbnailSize['width'], $newsThumbnailSize['height']) ?>" alt="<?php echo ('')?>"/>
+							</div>
+						<?php
+		            }
+			    ?>
+
+
+		    	<div class="cmspro_list_summary">					
+					<h3><a href="<?php echo Mage::getBaseUrl().$url->getRequestPath();?>"><?php echo $n->getTitle();?></a></h3>
+
+				    <div>
+						<?php echo mb_substr($n->getSummary(),0,400)."..." ; ?>
+						<a href="<?php echo Mage::getBaseUrl().$url->getRequestPath();?>"><?php echo df_helper()->cmspro()->__('More');?></a>
+					</div>
+		    	</div>
+				<div class="clear"></div>
+		    </div>
+		  
+	    </div>
+		  
+	<?php } ?>
+		<?php 
+			echo $this->getToolbarHtml(); 
+		?> 
+	</div>
+<?php
+    endif;
+?>

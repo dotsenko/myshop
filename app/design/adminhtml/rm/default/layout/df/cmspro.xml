@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<layout version='0.1.0'>
+
+
+
+	<cmspro_adminhtml_category_index>
+		<reference name='content'>
+			<block type='df_cmspro/adminhtml_category' name='cmspro.category'/>
+		</reference>
+	</cmspro_adminhtml_category_index>
+
+
+
+
+	<cmspro_adminhtml_news_index>
+		<reference name='content'>
+			<block type='df_cmspro/adminhtml_news' name='cmspro.news'/>
+		</reference>
+	</cmspro_adminhtml_news_index>
+
+
+
+
+	<cmspro_adminhtml_news_new>
+		<!-- <update handle='adminhtml_cms_page_edit' /> -->
+		<update handle='cmspro_adminhtml_news_edit'/>
+	</cmspro_adminhtml_news_new>
+
+
+
+
+	<cmspro_adminhtml_news_edit>
+		<!--
+				<reference name='head'>
+					<action method='addJs'><script>mage/adminhtml/wysiwyg/tiny_mce/setup.js</script></action>
+				</reference>
+				-->
+		<update handle='editor'/>
+		<reference name='content'>
+			<block type='df_cmspro/adminhtml_news_edit' name='cmspro_news_edit'></block>
+		</reference>
+		<reference name='left'>
+			<block type='df_cmspro/adminhtml_news_edit_tabs' name='cmspro_news_edit_tabs'>
+				<block type='df_cmspro/adminhtml_news_edit_tab_general' name='cmspro_news_edit_tab_general'/>
+				<block type='df_cmspro/adminhtml_news_edit_tab_content' name='cmspro_news_edit_tab_content'/>
+				<block type='df_cmspro/adminhtml_news_edit_tab_meta' name='cmspro_news_edit_tab_meta'/>
+				<action method='addTab'>
+					<name>general_section</name>
+					<block>cmspro_news_edit_tab_general</block>
+				</action>
+				<action method='addTab'>
+					<name>content_section</name>
+					<block>cmspro_news_edit_tab_content</block>
+				</action>
+				<action method='addTab'>
+					<name>meta_section</name>
+					<block>cmspro_news_edit_tab_meta</block>
+				</action>
+			</block>
+		</reference>
+	</cmspro_adminhtml_news_edit>
+
+
+
+
+	<cmspro_adminhtml_wysiwyg_images_index>
+		<!--
+				<remove name='footer' />
+				<remove name='head' />
+				<reference name='left'>
+					<block name='wysiwyg_images.js' type='df_cmspro/adminhtml_wysiwyg_images_content' template='df/cmspro/browser/js.phtml' />
+					<block name='wysiwyg_images.tree' type='df_cmspro/adminhtml_wysiwyg_images_tree' template='df/cmspro/browser/tree.phtml' />
+				</reference>
+				<reference name='content'>
+					<block name='wysiwyg_images.content'  type='df_cmspro/adminhtml_wysiwyg_images_content' template='df/cmspro/browser/content.phtml'>
+						<block name='wysiwyg_images.uploader' type='df_cmspro/adminhtml_wysiwyg_images_content_uploader' template='df/cmspro/browser/content/uploader.phtml' />
+						<block name='wysiwyg_images.newfolder' type='df_cmspro/adminhtml_wysiwyg_images_content_newfolder' template='df/cmspro/browser/content/newfolder.phtml' />
+					</block>
+				</reference>
+				   -->
+
+		<remove name='footer'/>
+		<remove name='head'/>
+		<reference name='left'>
+			<block name='wysiwyg_images.js' type='adminhtml/cms_wysiwyg_images_content'
+				   template='cms/browser/js.phtml'/>
+			<block name='wysiwyg_images.tree' type='adminhtml/cms_wysiwyg_images_tree'
+				   template='cms/browser/tree.phtml'/>
+		</reference>
+		<reference name='content'>
+			<block name='wysiwyg_images.content' type='adminhtml/cms_wysiwyg_images_content'
+				   template='cms/browser/content.phtml'>
+				<block name='wysiwyg_images.uploader' type='adminhtml/cms_wysiwyg_images_content_uploader'
+					   template='cms/browser/content/uploader.phtml'/>
+				<block name='wysiwyg_images.newfolder' type='adminhtml/cms_wysiwyg_images_content_newfolder'
+					   template='cms/browser/content/newfolder.phtml'/>
+			</block>
+		</reference>
+
+	</cmspro_adminhtml_wysiwyg_images_index>
+
+
+
+
+	<cmspro_adminhtml_wysiwyg_images_contents>
+		<block name='wysiwyg_images.files' type='adminhtml/cms_wysiwyg_images_content_files'
+			   template='cms/browser/content/files.phtml' output='toHtml'/>
+	</cmspro_adminhtml_wysiwyg_images_contents>
+
+
+
+
+</layout>

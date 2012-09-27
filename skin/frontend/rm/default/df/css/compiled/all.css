@@ -1,0 +1,1831 @@
+@charset "UTF-8";
+.df div.df-frontend .df-catalog .df-category .df-navigation {
+  margin: 0 0 4em 0; }
+  .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories {
+    display: block;
+    width: 100%;
+    overflow: hidden; }
+    .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories li.df-break {
+      clear: left; }
+    .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories li.df-category {
+      display: block;
+      float: left;
+      text-align: center;
+      margin: 1em 0; }
+      .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories li.df-category a.df-image-link {
+        display: inline;
+        text-decoration: none;
+        margin: 0 auto; }
+      .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories li.df-category a.df-text-link {
+        display: block; }
+        .df div.df-frontend .df-catalog .df-category .df-navigation ul.df-categories li.df-category a.df-text-link h2.df-caption {
+          display: block;
+          text-align: center;
+          text-decoration: underline; }
+
+.form-list ul li .df-phone-container {
+  width: 100%;
+  overflow: hidden; }
+  .form-list ul li .df-phone-container .df-prefix {
+    float: left;
+    margin-top: 1.65em;
+    width: 1.5em; }
+  .form-list ul li .df-phone-container label {
+    display: block;
+    width: 100%; }
+  .form-list ul li .df-phone-container input {
+    letter-spacing: 0.03em; }
+  .form-list ul li .df-phone-container .df-network-code-container {
+    float: left; }
+    .form-list ul li .df-phone-container .df-network-code-container label {
+      width: 2.5em;
+      margin: 0 0 0 0.5em; }
+    .form-list ul li .df-phone-container .df-network-code-container .df-network-code-input-frame {
+      width: 5em;
+      overflow: hidden; }
+      .form-list ul li .df-phone-container .df-network-code-container .df-network-code-input-frame .df-bracket {
+        float: left; }
+      .form-list ul li .df-phone-container .df-network-code-container .df-network-code-input-frame input.df-phone-network-code {
+        float: left;
+        width: 2.5em;
+        margin: 0 0.25em;
+        text-align: center; }
+  .form-list ul li .df-phone-container .df-suffix-container {
+    width: 8em;
+    float: left; }
+    .form-list ul li .df-phone-container .df-suffix-container label {
+      width: 50%; }
+    .form-list ul li .df-phone-container .df-suffix-container input.df-phone-suffix {
+      width: 7em; }
+.form-list ul li .df-field-comment {
+  margin: 0.2em 0 0 0;
+  font-size: 82.5%;
+  line-height: 112.5%; }
+
+.df .df-checkout-ergonomic {
+  margin: 0;
+  padding: 1.3em;
+  border: 1px solid #BBAFA0;
+  /* ╨б╤В╨╕╨╗╨╕ ╤Б╤В╨░╨╜╨┤╨░╤А╤В╨╜╨╛╨╣ ╤В╨╡╨╝╤Л Magento */ }
+  .df .df-checkout-ergonomic strong {
+    font-weight: bold; }
+    .df .df-checkout-ergonomic strong * {
+      font-weight: bold; }
+  .df .df-checkout-ergonomic h3, .df .df-checkout-ergonomic h4, .df .df-checkout-ergonomic h5, .df .df-checkout-ergonomic h6 {
+    line-height: 1.35; }
+  .df .df-checkout-ergonomic h1 {
+    font-size: 20px;
+    line-height: 40px; }
+  .df .df-checkout-ergonomic input, .df .df-checkout-ergonomic select, .df .df-checkout-ergonomic textarea, .df .df-checkout-ergonomic button {
+    font-size: 12px;
+    line-height: 15px; }
+  .df .df-checkout-ergonomic input.input-text, .df .df-checkout-ergonomic textarea {
+    padding: 2px; }
+  .df .df-checkout-ergonomic a.df-login {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 6px 0 0 0; }
+  .df .df-checkout-ergonomic .df-body {
+    width: 100%;
+    overflow: hidden;
+    margin: 1em 0 0 0;
+    padding: 1em 0 0 0;
+    border-top: 1px solid #d8d2c7; }
+    .df .df-checkout-ergonomic .df-body .df-body-left {
+      width: 31.8%;
+      float: left;
+      padding: 0 1.5% 0 0; }
+    .df .df-checkout-ergonomic .df-body .df-body-right {
+      width: 66.6%;
+      float: left; }
+      .df .df-checkout-ergonomic .df-body .df-body-right .df-body-right-top {
+        width: 100%;
+        overflow: hidden; }
+    .df .df-checkout-ergonomic .df-body h2 {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #404040;
+      background-position: top left;
+      background-repeat: no-repeat;
+      padding: 0 0 0 41px;
+      height: 41px;
+      line-height: 30px; }
+    .df .df-checkout-ergonomic .df-body .df-h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #404040;
+      line-height: 25px; }
+    .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields {
+      width: 254px;
+      overflow: hidden; }
+      .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields div.field {
+        width: 120px;
+        float: left; }
+        .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields div.field .input-box {
+          width: 120px;
+          clear: none; }
+          .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields div.field .input-box input.input-text {
+            width: 114px; }
+          .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields div.field .input-box select {
+            width: 114px; }
+      .df .df-checkout-ergonomic .df-body .df-block .form-list li.fields div.df-field-last {
+        width: 120px;
+        float: right; }
+    .df .df-checkout-ergonomic .df-body .df-block .form-list li.wide {
+      width: 254px; }
+      .df .df-checkout-ergonomic .df-body .df-block .form-list li.wide .input-box {
+        width: 254px; }
+        .df .df-checkout-ergonomic .df-body .df-block .form-list li.wide .input-box input.input-text {
+          width: 248px; }
+        .df .df-checkout-ergonomic .df-body .df-block .form-list li.wide .input-box select {
+          width: 254px; }
+    .df .df-checkout-ergonomic .df-body .df-block .form-list .df-field-street .df-street-line-1 {
+      margin: 0 0 8px 0; }
+    .df .df-checkout-ergonomic .df-body .df-block #billing-buttons-container
+    ,
+    .df .df-checkout-ergonomic .df-body .df-block #shipping-buttons-container {
+      display: none; }
+    .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-1
+    ,
+    .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-2 {
+      float: none;
+      width: auto; }
+    .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-1 h3, .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-1 p, .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-1 h4, .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-1 ul.ul {
+      display: none; }
+    .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-2 h4, .df .df-checkout-ergonomic .df-body .df-block-login .col2-set .col-2 p {
+      display: none; }
+    .df .df-checkout-ergonomic .df-body #co-shipping-form .control {
+      display: none; }
+    .df .df-checkout-ergonomic .df-body .df-column-1
+    ,
+    .df .df-checkout-ergonomic .df-body .df-column-2 {
+      background-image: url("../../images/checkout/ergonomic/separator/vertical.gif");
+      background-position: top right;
+      background-repeat: no-repeat; }
+    .df .df-checkout-ergonomic .df-body .df-column-2
+    ,
+    .df .df-checkout-ergonomic .df-body .df-column-3 {
+      width: 45.5%;
+      float: left; }
+      .df .df-checkout-ergonomic .df-body .df-column-2
+      .buttons-set,
+      .df .df-checkout-ergonomic .df-body .df-column-3 .buttons-set {
+        display: none; }
+    .df .df-checkout-ergonomic .df-body .df-column-1 h2 {
+      background-image: url("../../images/checkout/ergonomic/step/number/1.png");
+      background-repeat: no-repeat; }
+    .df .df-checkout-ergonomic .df-body .df-column-2 {
+      padding: 0 3%; }
+      .df .df-checkout-ergonomic .df-body .df-column-2 h2 {
+        background-image: url("../../images/checkout/ergonomic/step/number/2.png");
+        background-repeat: no-repeat; }
+    .df .df-checkout-ergonomic .df-body .df-column-3 {
+      padding: 0 0 0 3%; }
+      .df .df-checkout-ergonomic .df-body .df-column-3 h2 {
+        background-image: url("../../images/checkout/ergonomic/step/number/3.png");
+        background-repeat: no-repeat; }
+    .df .df-checkout-ergonomic .df-body .df-block-method-review {
+      margin: 1em 0 0 0;
+      /* ╨б╤В╨╕╨╗╨╕ ╤Б╤В╨░╨╜╨┤╨░╤А╤В╨╜╨╛╨╣ ╤В╨╡╨╝╤Л Magento */
+      /* Data Table */
+      /*.data-table tr.odd:hover,
+      .data-table tr.even:hover { background:#ebf1f6; }*/
+      /* Bundle products tables */ }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review h2 {
+        background-image: url("../../images/checkout/ergonomic/step/number/4.png");
+        background-repeat: no-repeat; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table {
+        width: 100%;
+        border: 1px solid #bebcb7; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table .odd {
+        background: #f8f7f5; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table .even {
+        background: #eeeded; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table td.last,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table th.last {
+        border-right: 0; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tr.last th,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tr.last td {
+        border-bottom: 0 !important; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table th {
+        padding: 3px 8px;
+        font-weight: bold; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table td {
+        padding: 3px 8px;
+        line-height: 1.7; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th {
+        font-weight: bold;
+        border-right: 1px solid #c2d3e0;
+        padding: 2px 8px;
+        color: #0a263c;
+        white-space: nowrap;
+        vertical-align: middle; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th.wrap {
+        white-space: normal; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th a,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th a:hover {
+        color: #fff; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th {
+        background: url(../../../../../default/default/images/bkg_th.gif) repeat-x 0 100% #d9e5ee; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table thead th .tax-flag {
+        font-size: 11px;
+        white-space: nowrap; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tfoot {
+        border-bottom: 1px solid #d9dde3; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tfoot tr.first td {
+        background: url(../../../../../default/default/images/bkg_tfoot.gif) 0 0 repeat-x; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tfoot tr {
+        background-color: #dee5e8 !important; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tfoot td {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-bottom: 0;
+        border-right: 1px solid #d9dde3; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tfoot strong {
+        font-size: 16px; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody th,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody td {
+        border-bottom: 1px solid #d9dde3;
+        border-right: 1px solid #d9dde3; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.odd tr {
+        background: #f8f7f5 !important; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.even tr {
+        background: #f6f6f6 !important; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.odd tr td,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.even tr td {
+        border-bottom: 0; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.odd tr.border td,
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody.even tr.border td {
+        border-bottom: 1px solid #d9dde3; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody td .option-label {
+        font-weight: bold;
+        font-style: italic; }
+      .df .df-checkout-ergonomic .df-body .df-block-method-review .data-table tbody td .option-value {
+        padding-left: 10px; }
+
+/* CMS ============================================================================= */
+.cms-home .col1-layout,
+.cms-index-index .col1-layout {
+  border: 0; }
+
+/*.cms-home .col1-layout .std,
+.cms-index-index .col1-layout .std { border:1px solid #cbc0b2; }*/
+.cms-home .main .std .messages,
+.cms-index-index .main .std .messages {
+  margin-top: 0; }
+
+.cms-home .top-callout,
+.cms-index-index .top-callout {
+  margin-bottom: 6px; }
+
+.cms-home .col1-layout .col-main,
+.cms-index-index .col1-layout .col-main {
+  padding: 0; }
+
+.cms-home .col2-set .col-1,
+.cms-index-index .col2-set .col-1 {
+  width: 705px; }
+
+.cms-home .col2-set .col-2,
+.cms-index-index .col2-set .col-2 {
+  width: 244px;
+  border: 1px solid #d9d7ca;
+  border-left: 0;
+  margin-left: -244px; }
+
+.cms-home .col2-set .col-2 img,
+.cms-index-index .col2-set .col-2 img {
+  display: block;
+  margin: 6px auto; }
+
+.cms-home .col1-layout .category-view,
+.cms-index-index .col1-layout .category-view {
+  margin: 0 0 20px; }
+
+.cms-home .col1-layout .page-title,
+.cms-index-index .col1-layout .page-title {
+  margin: 3px 0 0; }
+
+.cms-home .col1-layout .products-grid,
+.cms-index-index .col1-layout .products-grid {
+  margin: 0;
+  border: 1px solid #cbc0b2;
+  border-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.cms-home .col1-layout .products-list,
+.cms-index-index .col1-layout .products-list {
+  margin: 0;
+  border: 1px solid #cbc0b2;
+  border-top: 0;
+  padding-top: 20px; }
+
+.cms-hp-touchsmart-iq506-has-arrived .col-main {
+  padding: 0; }
+
+.cms-hp-touchsmart-iq506-has-arrived .main {
+  margin-top: 0; }
+
+.cms-hp-touchsmart-iq506-has-arrived .breadcrumbs {
+  display: none; }
+
+.df-cms-menu-wrapper {
+  width: 100%;
+  /*.cms-menu li span { color:#444; }*/
+  /* CMS Menu Types */ }
+  .df-cms-menu-wrapper .cms-menu {
+    margin: 0 0 14px 0;
+    padding: 15px;
+    border: 1px solid #d1d1d1;
+    background: white url(../../images/cms/bkg_cms-menu.gif) 0 0 repeat-x;
+    font-size: 12px;
+    list-style-position: inside; }
+  .df-cms-menu-wrapper .cms-menu li {
+    color: #999;
+    margin: 3px 0; }
+  .df-cms-menu-wrapper .cms-menu li.parent > a,
+  .df-cms-menu-wrapper .cms-menu li.parent > strong {
+    background: url(../../images/cms/bkg_cms-menu-arrow-down.gif) 100% 50% no-repeat;
+    padding-right: 13px; }
+  .df-cms-menu-wrapper .cms-menu li strong {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333; }
+  .df-cms-menu-wrapper .cms-menu li ul,
+  .df-cms-menu-wrapper .cms-menu li ol {
+    padding-left: 15px;
+    margin-bottom: 7px;
+    list-style-position: inside; }
+  .df-cms-menu-wrapper ol.cms-menu.type-1 {
+    list-style-type: decimal; }
+  .df-cms-menu-wrapper ol.cms-menu.type-1 ol {
+    list-style-type: decimal; }
+  .df-cms-menu-wrapper ol.cms-menu.type-a {
+    list-style-type: lower-alpha; }
+  .df-cms-menu-wrapper ol.cms-menu.type-a ol {
+    list-style-type: lower-alpha; }
+  .df-cms-menu-wrapper ol.cms-menu.type-A {
+    list-style-type: upper-alpha; }
+  .df-cms-menu-wrapper ol.cms-menu.type-A ol {
+    list-style-type: upper-alpha; }
+  .df-cms-menu-wrapper ol.cms-menu.type-i {
+    list-style-type: lower-roman; }
+  .df-cms-menu-wrapper ol.cms-menu.type-i ol {
+    list-style-type: lower-roman; }
+  .df-cms-menu-wrapper ol.cms-menu.type-I {
+    list-style-type: upper-roman; }
+  .df-cms-menu-wrapper ol.cms-menu.type-I ol {
+    list-style-type: upper-roman; }
+  .df-cms-menu-wrapper ul.cms-menu.type-circle {
+    list-style-type: circle; }
+  .df-cms-menu-wrapper ul.cms-menu.type-circle ul {
+    list-style-type: circle; }
+  .df-cms-menu-wrapper ul.cms-menu.type-disc {
+    list-style-type: disc; }
+  .df-cms-menu-wrapper ul.cms-menu.type-disc ul {
+    list-style-type: disc; }
+  .df-cms-menu-wrapper ul.cms-menu.type-square {
+    list-style-type: square; }
+  .df-cms-menu-wrapper ul.cms-menu.type-square ul {
+    list-style-type: square; }
+
+/* ======================================================================================= */
+#df-loading-mask {
+  background: url(../../images/blank.gif) repeat;
+  position: absolute;
+  color: #d85909;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.80;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* IE8 */
+  z-index: 500; }
+  #df-loading-mask .loader {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    width: 150px;
+    margin-left: -105px;
+    padding: 15px 30px;
+    background: #fff4e9;
+    border: 2px solid #f1af73;
+    color: #d85909;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000; }
+
+.storecredit .account-balance {
+  margin: 0 0 20px;
+  padding: 0 0 10px;
+  font-size: 12px;
+  background: url("../../images/customer-credit/background.gif") repeat-x 0 100%; }
+  .storecredit .account-balance .price {
+    font-weight: bold; }
+
+#invitationForm .buttons-set {
+  margin-top: 2em; }
+
+.df .df-checkout-ergonomic .df-payment-options-container h4 {
+  line-height: 1.2;
+  color: #2f2f2f;
+  margin: 0.5em 0; }
+
+.df-payment-options-container h4 h4 {
+  line-height: 1.2;
+  color: #2f2f2f;
+  margin: 0.5em 0; }
+
+body.df {
+  text-align: left;
+  font-family: Times New Roman;
+  font-size: 14px;
+  line-height: 18px;
+  background: none; }
+  body.df div.df-pd4 .df-form-container {
+    width: 780px;
+    margin: 40px auto 0 auto; }
+    body.df div.df-pd4 .df-form-container .df-form {
+      width: 100%;
+      height: 608px;
+      border: 2px solid black; }
+      body.df div.df-pd4 .df-form-container .df-form .df-duplicate {
+        width: 100%;
+        overflow: hidden; }
+        body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column {
+          height: 100%; }
+        body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-left {
+          float: left;
+          width: 218px;
+          border-right: 2px solid black; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-left p {
+            font-size: 8pt;
+            font-weight: bold;
+            text-align: center; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-left p.df-text-notification {
+            font-family: Arial;
+            margin: 40px 0 200px 0; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-left p.df-text-receipt {
+            font-family: Arial;
+            margin: 250px 0 18px 0; }
+        body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right {
+          float: left;
+          width: 560px; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-form-name {
+            font-size: 8pt;
+            font-weight: bold;
+            font-style: italic;
+            text-align: right;
+            margin-right: 20px; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row {
+            padding: 2px 0 0 0; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-label-with-line {
+            border-top: 1px solid black;
+            font-size: 7pt; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-recipient-name {
+            margin: -6px 0 0 0;
+            text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-recipient-name .df-label-with-line {
+              text-align: center; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-2 {
+            width: 100%;
+            overflow: hidden;
+            text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-2 .df-recipient-tax-number {
+              float: left;
+              width: 208px; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-2 .df-recipient-bank-account-number {
+              float: right;
+              width: 314px; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-3 {
+            width: 100%;
+            overflow: hidden;
+            text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-3 .df-recipient-bank-name {
+              float: left;
+              width: 316px;
+              font-size: 10pt;
+              margin: 2px 0 0 0; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-3 .df-recipient-bank-id {
+              float: right;
+              width: 210px;
+              overflow: hidden; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-3 .df-recipient-bank-id .df-input {
+                width: 172px;
+                float: right;
+                border-bottom: 1px solid black; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-3 .df-recipient-bank-id .df-label {
+                float: left;
+                font-size: 8pt;
+                line-height: 18px; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-recipient-bank-loro {
+            width: 100%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-recipient-bank-loro .df-input {
+              width: 308px;
+              float: right;
+              border-bottom: 1px solid black;
+              text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-recipient-bank-loro .df-label {
+              float: left;
+              font-size: 8pt;
+              line-height: 18px;
+              margin: 0 0 0 1em; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-5 {
+            width: 100%;
+            overflow: hidden;
+            text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-5 .df-payment-purpose {
+              float: left;
+              width: 318px;
+              font-size: 10pt;
+              margin: 2px 0 0 0; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-5 .df-payer-bank-account-number {
+              float: right;
+              width: 209px;
+              line-height: 18px;
+              font-size: 10pt;
+              margin: 2px 0 0 0; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-name {
+            width: 100%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-name .df-input {
+              width: 408px;
+              float: right;
+              border-bottom: 1px solid black;
+              text-align: center; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-name .df-label {
+              float: left;
+              font-size: 8pt;
+              line-height: 18px;
+              margin: 0 0 0 1em; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-address {
+            width: 100%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-address .df-input {
+              width: 408px;
+              float: right;
+              border-bottom: 1px solid black;
+              text-align: center;
+              font-size: 9pt; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-payer-address .df-label {
+              float: left;
+              font-size: 8pt;
+              line-height: 18px;
+              margin: 0 0 0 1em; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money {
+            display: block;
+            float: left;
+            width: 49%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money .df-main-label {
+              float: left;
+              font-size: 9pt;
+              line-height: 18px;
+              margin: 0 0 0 1em; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money .df-numeric-container {
+              float: left;
+              overflow: hidden; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money .df-numeric-container .df-input {
+                float: left;
+                text-align: center;
+                border-bottom: 1px solid black;
+                margin: 0 3px; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money .df-numeric-container .df-label {
+                float: left;
+                font-size: 9pt;
+                line-height: 18px; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-money .df-fractional-part .df-input {
+              width: 1.5em; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-8 {
+            width: 100%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-8 .df-payment-net-amount .df-integer-part .df-input {
+              width: 6em; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-8 .df-payment-fee .df-integer-part .df-input {
+              width: 3em; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 {
+            width: 100%;
+            overflow: hidden; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-payment-total-amount .df-integer-part .df-input {
+              width: 6em; }
+            body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date {
+              width: 49%;
+              overflow: hidden;
+              text-align: center; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-day-container {
+                float: left;
+                width: 2.7em;
+                overflow: hidden; }
+                body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-day-container .df-quote {
+                  float: left; }
+                body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-day-container .df-day {
+                  float: left;
+                  width: 1.8em;
+                  border-bottom: 1px solid black; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-month {
+                float: left;
+                width: 8em;
+                border-bottom: 1px solid black;
+                margin: 0 4px 0 0; }
+              body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-year-container {
+                float: left;
+                width: 4em;
+                overflow: hidden; }
+                body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-year-container .df-year {
+                  float: left;
+                  border-bottom: 1px solid black; }
+                body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-9 .df-date .df-year-container .df-label {
+                  float: left; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-10 .df-main-text {
+            font-size: 8pt;
+            margin: 0 0 0 12px; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate .df-column-right .df-row-10 .df-signature-label {
+            float: right;
+            margin: -14px 40% 0 0;
+            font-weight: bold;
+            font-size: 8pt; }
+      body.df div.df-pd4 .df-form-container .df-form .df-duplicate-top {
+        height: 281px;
+        border-bottom: 2px solid black; }
+      body.df div.df-pd4 .df-form-container .df-form .df-duplicate-bottom {
+        height: 325px; }
+        body.df div.df-pd4 .df-form-container .df-form .df-duplicate-bottom .df-rows {
+          margin: 18px 0 0 0; }
+          body.df div.df-pd4 .df-form-container .df-form .df-duplicate-bottom .df-rows .df-row {
+            padding: 3px 0; }
+    body.df div.df-pd4 .df-form-container .df-cutting-line {
+      font-size: 12pt;
+      padding: 0 0 0 20px;
+      background: url("../../images/pd4/scissors.png") left center no-repeat; }
+
+.df div.df-frontend .df-promo-gift .df-gift-chooser .df-center {
+  font-family: Arial,Helvetica,sans-serif;
+  border: 1px solid #cec3b6;
+  background: #fafaec;
+  padding: 12px 15px 0 15px;
+  margin: 0 0 25px 0; }
+  .df div.df-frontend .df-promo-gift .df-gift-chooser .df-center h2 {
+    color: #e26703;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 5px 0; }
+  .df div.df-frontend .df-promo-gift .df-gift-chooser .df-center ul.df-promo-actions li.df-promo-action ul.df-product-list {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0.5em 0; }
+    .df div.df-frontend .df-promo-gift .df-gift-chooser .df-center ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product {
+      display: block;
+      float: left;
+      text-align: center;
+      margin: 0.5em 1em 0.5em 0;
+      width: 150px;
+      border: 1px solid #d0cbc1;
+      padding: 1em; }
+      .df div.df-frontend .df-promo-gift .df-gift-chooser .df-center ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product .df-details .df-name {
+        margin: 0.25em 0 0.5em 0;
+        line-height: 17px;
+        height: 51px; }
+        .df div.df-frontend .df-promo-gift .df-gift-chooser .df-center ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product .df-details .df-name a {
+          font-weight: bold; }
+
+.df div.df-frontend .df-promo-gift .df-gift-chooser .df-side {
+  background: #fafaec;
+  border: 1px solid #cec3b6;
+  padding: 10px 0;
+  margin: 0 0 14px 0; }
+  .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side h2 {
+    color: #e26703;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 10px 5px 10px; }
+  .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action .df-description {
+    margin: 0 10px; }
+  .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list {
+    display: block;
+    margin: 0.5em 0; }
+    .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      padding: 12px 0; }
+      .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product .product-image {
+        display: block;
+        float: left;
+        border: 1px solid #d0cbc1;
+        margin: 0 0 0 10px; }
+      .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product .df-details {
+        display: block;
+        margin: 0 10px 0 60px;
+        padding: 0 0 0 12px; }
+        .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-product .df-details .df-name {
+          margin: 0.25em 0 0.5em 0; }
+    .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-odd {
+      background: #FAFAFA; }
+    .df div.df-frontend .df-promo-gift .df-gift-chooser .df-side ul.df-promo-actions li.df-promo-action ul.df-product-list li.df-last {
+      padding-bottom: 0; }
+
+/**
+ * ╨б╤В╤А╨╛╨║╨╕ ╨╖╨░╨║╨░╨╖╨░ ╤Б ╨┐╨╛╨┤╨░╤А╨╛╤З╨╜╤Л╨╝╨╕ ╤В╨╛╨▓╨░╤А╨░╨╝╨╕
+ */
+#shopping-cart-table tr.df-free-quote-item {
+  background: #fafaec; }
+  #shopping-cart-table tr.df-free-quote-item .price {
+    text-decoration: line-through; }
+  #shopping-cart-table tr.df-free-quote-item .df-gift-label {
+    color: #e26703;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.df-gift-product .product-essential {
+  background: #fafaec; }
+  .df-gift-product .product-essential .price {
+    text-decoration: line-through; }
+  .df-gift-product .product-essential .df-gift-label {
+    color: #e26703;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.df-reward-total .df-discount {
+  width: 100%;
+  overflow: hidden; }
+  .df-reward-total .df-discount .btn-remove {
+    float: left; }
+  .df-reward-total .df-discount .df-discount-value {
+    float: right; }
+
+.rewards {
+  margin: -10px 0 20px; }
+
+.reward-message
+,
+.df .reward-message {
+  display: block;
+  margin: 5px -15px 5px -15px;
+  background: #d55721 url("../../images/reward/background/0.gif") 5px 3px no-repeat;
+  padding: 3px 5px 3px 32px;
+  font: normal 12px/20px Arial, Helvetica, sans-serif;
+  color: #fff; }
+  .reward-message
+  p,
+  .df .reward-message p {
+    margin: 0 !important; }
+  .reward-message
+  .limit,
+  .df .reward-message .limit {
+    display: block;
+    font-size: 11px;
+    line-height: 1.15; }
+  .reward-message
+  a,
+  .df .reward-message a {
+    color: #ffe6dc;
+    text-decoration: underline; }
+  .reward-message
+  a:hover,
+  .df .reward-message a:hover {
+    color: #ffe6dc;
+    text-decoration: none; }
+  .reward-message
+  .price,
+  .df .reward-message .price {
+    font-size: 1em;
+    font-weight: normal; }
+
+.reward-review,
+.reward-tag,
+.reward-checkout {
+  margin: 0; }
+
+.my-rewards .box {
+  margin: 0 0 30px; }
+.my-rewards .info-box .box-title {
+  margin: 10px 10px; }
+.my-rewards .info-box .box-content {
+  padding: 0 10px 10px; }
+.my-rewards p.error {
+  display: inline;
+  color: #d91a00; }
+.my-rewards dl {
+  font-size: 12px; }
+  .my-rewards dl dt {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 10px; }
+    .my-rewards dl dt span {
+      color: #d12c01; }
+  .my-rewards dl dd.last {
+    margin: 7px 0 0; }
+.my-rewards .form-list label {
+  width: auto; }
+.my-rewards .form-list .control .input-box {
+  position: static;
+  margin: 0 5px 0 0; }
+.my-rewards .data-table small {
+  display: block;
+  font-size: 1em;
+  color: #808080; }
+
+@media print {
+  @page {
+    size: landscape; } }
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-errors {
+  position: absolute;
+  top: 0;
+  color: red; }
+  .df .df-shipping-torg12 .df-errors li {
+    margin: 0.75em 0; }
+.df .df-shipping-torg12 .df-title-container {
+  width: 100%;
+  overflow: hidden; }
+  .df .df-shipping-torg12 .df-title-container .df-title {
+    float: right;
+    width: 63mm;
+    font-style: italic;
+    font-size: 3mm;
+    text-align: right; }
+    .df .df-shipping-torg12 .df-title-container .df-title h1 {
+      font-weight: bold;
+      font-style: italic; }
+.df .df-shipping-torg12 .df-heading {
+  width: 320.4mm;
+  overflow: hidden;
+  margin: 2mm 0 20mm 0; }
+  .df .df-shipping-torg12 .df-heading .df-heading-left {
+    float: left;
+    margin: 9.3mm 0 0 0; }
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row {
+      font-size: 3mm; }
+      .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row .df-input {
+        width: 205mm; }
+      .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row .df-input-with-2-lines {
+        line-height: 3.5mm; }
+      .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row .df-field-with-left-label {
+        float: left;
+        width: 228.2mm;
+        overflow: hidden; }
+        .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row .df-field-with-left-label .df-label {
+          float: left;
+          font-size: 3mm; }
+        .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row .df-field-with-left-label .df-input-container {
+          float: right; }
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-2 {
+      margin: -0.25mm 0 0.25mm 0; }
+      .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-2 .df-input {
+        text-align: center; }
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-3
+    .df-input-container .df-input,
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-5 .df-input-container .df-input {
+      height: 7mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-6 {
+      margin: -1.5mm 0 0 0;
+      padding: 0.15mm 0 0 0; }
+    .df .df-shipping-torg12 .df-heading .df-heading-left .df-rows .df-row-consignee .df-input {
+      width: 197mm; }
+  .df .df-shipping-torg12 .df-heading .df-heading-right {
+    width: 90mm;
+    position: relative;
+    float: right;
+    z-index: 1;
+    left: -45mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row .df-fields {
+      width: 100%;
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row .df-fields .df-field {
+        float: right; }
+      .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row .df-fields .df-field-value {
+        width: 27mm;
+        padding: 0.5mm 0;
+        text-align: center;
+        border-top: 0.265mm solid black;
+        border-left: 0.794mm solid black;
+        border-right: 0.794mm solid black;
+        border-bottom: none;
+        font-size: 3.4mm;
+        line-height: 4mm; }
+      .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row .df-fields .df-field-label {
+        padding: 0 2mm 0 0;
+        text-align: right;
+        font-size: 3mm;
+        line-height: 4mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-1 .df-fields .df-field-value {
+      border-left: 0.265mm solid black;
+      border-right: 0.265mm solid black;
+      margin: 0 0mm 0 0;
+      width: 28mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-2 .df-fields .df-field-value {
+      border-top: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-4 .df-fields .df-field-value {
+      height: 6.1mm;
+      border-bottom: 0.265mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-4 .df-fields .df-field-label {
+      width: 17mm;
+      height: 8mm;
+      border-bottom: 0.265mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-5 .df-fields .df-field-value {
+      border-top: none; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-5 .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-6 .df-fields .df-field-label {
+      padding-top: 1.2mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-5 .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-6 .df-fields .df-field-value {
+      padding-top: 1.2mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-7 .df-fields .df-field-label
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-7 .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-8 .df-fields .df-field-label
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-8 .df-fields .df-field-value {
+      padding-top: 3.5mm;
+      padding-bottom: 3.5mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-10
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-label {
+      border: 0.265mm solid black;
+      border-right: none;
+      border-bottom: none;
+      width: 16.7mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-10
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-label-2 {
+      border: 0;
+      width: auto; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-value
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-10
+    .df-fields .df-field-value
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-10
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-value
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12
+    .df-fields .df-field-value
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-value
+    ,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-label {
+      padding-top: 1.3mm;
+      padding-bottom: 1.3mm; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label-1,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-10
+    .df-fields .df-field-label-1,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label-1,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-label-1 {
+      border-left: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-label {
+      border-top: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-label-2,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-label-2 {
+      border: none; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-label {
+      border-left: none;
+      border-top: none;
+      width: auto; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-13 .df-fields .df-field-value {
+      border-top: none;
+      border-bottom: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-3
+    .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-4
+    .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-7
+    .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-9
+    .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-11
+    .df-fields .df-field-value,
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-value {
+      border-top: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-label {
+      border-bottom: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-heading .df-heading-right .df-rows li.df-row-12 .df-fields .df-field-value {
+      border-bottom: 0.794mm solid black; }
+
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-body .df-body-heading {
+  width: 105mm;
+  overflow: hidden;
+  margin: -22mm auto 0 auto; }
+  .df .df-shipping-torg12 .df-body .df-body-heading h2 {
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4.5mm;
+    letter-spacing: 0;
+    margin: 10mm 0 0 0; }
+  .df .df-shipping-torg12 .df-body .df-body-heading .df-params {
+    display: block;
+    float: right;
+    width: 48.5mm;
+    overflow: hidden;
+    font-size: 3mm; }
+    .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param {
+      display: block;
+      float: left;
+      width: 24mm;
+      text-align: center; }
+      .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param .df-name {
+        border: 0.265mm solid black;
+        border-bottom: none;
+        padding: 0.5mm 0; }
+      .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param .df-value {
+        padding: 0.5mm 0;
+        border: 0.794mm solid black; }
+    .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param-1 .df-value {
+      border-right: 0.265mm solid black; }
+    .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param-1 .df-name {
+      border-right: none; }
+    .df .df-shipping-torg12 .df-body .df-body-heading .df-params .df-param-2 .df-value {
+      border-left: 0.265mm solid black; }
+.df .df-shipping-torg12 .df-body .df-orderItems {
+  margin: 3mm 0 0 0;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr th {
+    font-size: 3mm;
+    border: 0.265mm solid black;
+    text-align: center;
+    vertical-align: middle; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td {
+    font-size: 3mm;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    border: 0.265mm solid black;
+    padding: 0.25mm 1mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-ordering {
+    font-style: normal; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-productName {
+    text-align: left;
+    line-height: 3.5mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-3
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-5
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-14 {
+    border-left: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-3
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-12
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr td.df-column-15 {
+    border-right: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-3
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-5
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-6
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-7
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-8
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-9
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-10
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-11
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-12
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-14
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th.df-column-15 {
+    border-bottom: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-3
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-5
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-6
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-7
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-8
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-9
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-10
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-11
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-12
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-14
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-last td.df-column-15 {
+    border-bottom: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-3
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-5
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-6
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-7
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-8
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-9
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-10
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-11
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-12
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-14
+  ,
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-lastRowOnPage td.df-column-15 {
+    border-bottom: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-orderings th {
+    font-size: 3mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems tr.df-footer td.df-label {
+    text-align: right;
+    border: none;
+    font-style: normal; }
+  .df .df-shipping-torg12 .df-body .df-orderItems td {
+    word-wrap: break-word; }
+  .df .df-shipping-torg12 .df-body .df-orderItems col.df-column-1 {
+    width: 12mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems col.df-column-2 {
+    width: 70mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems col.df-column-4 {
+    width: 13mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems col.df-column-7 {
+    width: 10mm; }
+  .df .df-shipping-torg12 .df-body .df-orderItems col.df-column-8 {
+    width: 10mm; }
+
+.df .df-shipping-torg12 .df-footer {
+  margin: 3mm 0 0 0;
+  font-size: 3mm; }
+
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-footer .df-footer-top {
+  width: 95%;
+  margin: 0 0 0 5%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-1
+  .df-field,
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-2 .df-field {
+    width: 100%; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-1
+    .df-field .df-label-right,
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-2 .df-field .df-label-right {
+      float: left;
+      width: 29%;
+      padding: 0 0 0 1%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-1 .df-field .df-label-left {
+    width: 25%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-1 .df-field .df-input-container {
+    width: 45%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-2 {
+    padding-bottom: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-2 .df-field .df-label-left {
+      width: 8%; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-2 .df-field .df-input-container {
+      width: 62%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 {
+    margin-top: -4.5mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-1 {
+      width: 83%;
+      float: left; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-1 .df-label-left {
+        float: left;
+        width: 43.25%;
+        text-align: right;
+        margin: 4.5mm 2% 0 0; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-1 .df-input-container {
+        float: left;
+        text-align: center;
+        width: 54.75%;
+        margin: 4.5mm 0 0 0; }
+        .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-1 .df-input-container .df-input {
+          font-style: italic; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-2 {
+      width: 15%;
+      float: left;
+      margin: 0 0 0 1%;
+      padding: 2mm 0;
+      text-align: center;
+      border: 0.794mm solid black;
+      border-bottom: 0.265mm solid black; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-3 .df-field-2 .df-input-container .df-input {
+        font-style: italic; }
+  .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 {
+    margin-top: -4.5mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-1 {
+      float: left;
+      margin-top: 4mm;
+      margin-right: 4.3mm; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-1 .df-input-container {
+        width: 42.2mm;
+        margin-left: 4.8mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-2 {
+      float: left;
+      margin-top: 4mm; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-2 .df-label-left {
+        float: right;
+        text-align: right;
+        margin: 0 3mm 0 0; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-2 .df-input-container {
+        float: right;
+        text-align: center;
+        width: 118.7mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-3 {
+      width: 15%;
+      margin: 0 0 0 1%;
+      float: left;
+      text-align: center;
+      padding: 2mm 0;
+      border: 0.794mm solid black;
+      border-top: none; }
+      .df .df-shipping-torg12 .df-footer .df-footer-top .df-row-4 .df-field-3 .df-input-container {
+        width: 100%; }
+
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-footer .df-footer-bottom {
+  width: 100%;
+  overflow: hidden; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left {
+    width: 134.935mm;
+    float: left;
+    border-right: 0.265mm solid black;
+    padding: 0 2.5mm 0 0; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right {
+    width: 134.435mm;
+    float: right;
+    padding: 0 0 0 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-day {
+    float: left;
+    margin-right: 3.4mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-day .df-input-container {
+      width: 5.8mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-month {
+    float: left;
+    width: 22mm;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-month .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-year {
+    float: left;
+    width: 16.6mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-field-date-year .df-input-container {
+      width: 8.7mm;
+      margin-right: 1mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-4
+  .df-field .df-label-left,
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-5
+  .df-field .df-label-left,
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-6 .df-field .df-label-left {
+    font-weight: bold; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-stamp {
+    margin-top: 4mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-stamp .df-field-1 {
+      float: left;
+      width: 28mm;
+      margin-right: 9mm; }
+      .df .df-shipping-torg12 .df-footer .df-footer-bottom li.df-row-stamp .df-field-1 .df-label-left {
+        width: 100%;
+        text-align: right; }
+
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-1 .df-input-container {
+  width: 54.5mm;
+  margin-left: 5mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-1 .df-label-right {
+  float: right; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-2 .df-input-container {
+  float: right;
+  width: 90mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-3 .df-field-1 {
+  float: left;
+  width: 105mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-3 .df-field-1 .df-input-container {
+    width: 96mm;
+    margin-right: 2mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-3 .df-field-2 {
+  float: right;
+  width: 27mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-3 .df-field-2 .df-input-container {
+    width: 18mm;
+    margin-right: 2mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 {
+  margin-top: 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-1 {
+    float: left;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-1 .df-input-container {
+      margin-left: 2mm;
+      width: 25mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-2 {
+    float: left;
+    width: 26.3mm;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-2 .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-3 {
+    float: right;
+    width: 41.8mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-4 .df-field-3 .df-input-container {
+      width: 100%; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 {
+  margin-top: 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-1 {
+    float: left;
+    width: 60mm;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-1 .df-input-container {
+      margin-left: 2mm;
+      width: 25mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-2 {
+    float: left;
+    width: 26.3mm;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-2 .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-3 {
+    float: right;
+    width: 41.8mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-5 .df-field-3 .df-input-container {
+      width: 100%; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 {
+  margin-top: 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-1 {
+    float: left;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-1 .df-input-container {
+      margin-left: 2mm;
+      width: 25mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-2 {
+    float: left;
+    width: 26.3mm;
+    margin-right: 2mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-2 .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-3 {
+    float: right;
+    width: 41.8mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-left li.df-row-6 .df-field-3 .df-input-container {
+      width: 100%; }
+
+		/**
+ * ╨в╨╡╤Е╨╜╨╕╤З╨╡╤Б╨║╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨╕╨╝╨┐╨╛╤А╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┤╨░╨╜╨╜╤Л╨╣ ╤Д╨░╨╣╨╗ ╨╜╨╡ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨░ ╨▓╨╜╤Г╤В╤А╨╕ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╖ ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А╨╛╨▓ ╨┤╤А╤Г╨│╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░.
+ * ╨в╨╡╨╝ ╤Б╨░╨╝╤Л╨╝, ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡ ╨╜╨╡ ╨▒╤Г╨┤╤Г╤В ╨╕╨╝╨╡╤В╤М ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╣ ╨╛╨▒╨╗╨░╤Б╤В╨╕ ╨▓╨╕╨┤╨╕╨╝╨╛╤Б╤В╨╕,
+ * ╨╕ ╨╝╤Л ╨╝╨╛╨╢╨╡╨╝ ╨┤╨░╤В╤М ╨╕╨╝ ╨▒╨╛╨╗╨╡╨╡ ╨║╨╛╤А╨╛╤В╨║╨╕╨╡ ╨╕╨╝╨╡╨╜╨░.
+ *
+ * ╨Ю╨┤╨╜╨░╨║╨╛, ╨╛╨▒╤К╤П╨▓╨╗╨╡╨╜╨╕╨╡ @mixin ╨┐╨╛╨║╨░ (╨▓ ╤В╨╡╨║╤Г╤Й╨╡╨╣ ╤А╨╡╨┤╨░╨║╤Ж╨╕╨╕ ╤П╨╖╤Л╨║╨░ SASS)
+ * ╨┤╨╛╨┐╤Г╤Б╤В╨╕╨╝╨╛ ╤В╨╛╨╗╤М╨║╨╛ ╨╜╨░ ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╨╛╨╝ ╤Г╤А╨╛╨▓╨╜╨╡,
+ * ╨┐╨╛╤Н╤В╨╛╨╝╤Г ╨╝╤Л ╨╜╨╡ ╤Б╨╝╨╛╨╢╨╡╨╝ ╨╕╤Б╨┐╨╛╨╗╤М╨╖╨╛╨▓╨░╤В╤М ╨▓ @mixin ╨╜╨╡╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Л╨╡ ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Л╨╡.
+ */
+		/**
+ * 1px = 0,26458mm
+ */
+.df .df-shipping-torg12 {
+  width: 275.4mm;
+  /*height: 210mm;*/
+  margin: 0 auto;
+  padding: 5mm 10mm;
+  border: 0.265mm solid gray;
+  font-family: 'arial'; }
+  .df .df-shipping-torg12 .df-breakAfter {
+    page-break-after: always; }
+  .df .df-shipping-torg12 .df-breakBefore {
+    page-break-before: always;
+    page-break-inside: avoid; }
+  .df .df-shipping-torg12 .df-label-with-line {
+    font-size: 2.5mm;
+    border-top: 0.265mm solid black;
+    text-align: center;
+    margin: 0 0 1mm 0; }
+  .df .df-shipping-torg12 .df-line-thick {
+    border-top: 0.794mm solid black; }
+  .df .df-shipping-torg12 .df-row {
+    width: 100%;
+    overflow: hidden;
+    display: block; }
+    .df .df-shipping-torg12 .df-row .df-field {
+      overflow: hidden; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-left {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-label-right {
+        float: left; }
+      .df .df-shipping-torg12 .df-row .df-field .df-input-container {
+        float: left; }
+        .df .df-shipping-torg12 .df-row .df-field .df-input-container .df-input {
+          font-size: 3mm;
+          font-style: italic;
+          text-align: center; }
+
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right .df-row-1 .df-field-1 {
+  float: left;
+  width: 80mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right .df-row-1 .df-field-1 .df-input-container {
+    width: 44mm;
+    margin-left: 2mm;
+    margin-right: 1mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right .df-row-1 .df-field-2
+,
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right .df-row-1 .df-field-3
+,
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right .df-row-1 .df-field-4 {
+  float: right; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-2 {
+  margin-top: 3.2mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-2 .df-input-container {
+    float: right;
+    width: 117mm; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-3 .df-input-container {
+  width: 100%; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-4 {
+  margin-top: 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-4 .df-input-container {
+    width: 100%; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 {
+  margin-top: 5.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-1 {
+    float: left;
+    margin-right: 4mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-1 .df-input-container {
+      margin-left: 2mm;
+      width: 37mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-2 {
+    float: left;
+    width: 26.3mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-2 .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-3 {
+    float: right;
+    width: 45mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-5 .df-field-3 .df-input-container {
+      width: 100%; }
+.df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 {
+  margin-top: 2.5mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-1 {
+    float: left;
+    margin-right: 4mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-1 .df-input-container {
+      margin-left: 2mm;
+      width: 30mm; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-2 {
+    float: left;
+    width: 19mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-2 .df-input-container {
+      width: 100%; }
+  .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-3 {
+    float: right;
+    width: 32mm; }
+    .df .df-shipping-torg12 .df-footer .df-footer-bottom .df-footer-bottom-right li.df-row-6 .df-field-3 .df-input-container {
+      width: 100%; }
+
+.df .df-shipping-torg12-msie .df-heading .df-heading-left .df-rows li.df-row-2 {
+  margin-top: -0.75mm; }
+.df .df-shipping-torg12-msie .df-heading .df-heading-left .df-rows .df-row-3 {
+  margin-top: 1mm; }
+.df .df-shipping-torg12-msie .df-heading .df-heading-left .df-rows .df-row-6 {
+  margin-top: -0.75mm; }
+.df .df-shipping-torg12-msie .df-heading .df-heading-right .df-rows li.df-row-4 .df-fields .df-field-value {
+  height: 5mm; }
+.df .df-shipping-torg12-msie .df-heading .df-heading-right .df-rows li.df-row-4 .df-fields .df-field-label {
+  height: 6.75mm; }
+.df .df-shipping-torg12-msie .df-footer .df-footer-top .df-row-3 .df-field-2 {
+  margin-left: 1.1%;
+  padding-right: 0mm; }
+.df .df-shipping-torg12-webkit .df-heading .df-heading-left .df-rows li.df-row-2 {
+  margin-top: -1.5mm; }
+.df .df-shipping-torg12-webkit .df-heading .df-heading-right .df-rows li.df-row-1 .df-fields .df-field-value {
+  width: 28.3mm; }
+.df .df-shipping-torg12-webkit .df-heading .df-heading-right .df-rows li.df-row-4 .df-fields .df-field-value {
+  height: 6.8mm; }
+.df .df-shipping-torg12-webkit .df-footer .df-footer-top .df-row-3 .df-field-2 {
+  margin-left: 0.9%; }
+.df .df-shipping-torg12-mozilla .df-heading .df-heading-left {
+  margin-top: 9.75mm; }
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-2 {
+    margin-top: -1.25mm; }
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-4 {
+    margin-top: -0.25mm; }
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-5 {
+    margin-top: -0.5mm; }
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-6 {
+    margin-top: -1.75mm; }
+@media print {
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-3 {
+    margin-top: 1mm; }
+  .df .df-shipping-torg12-mozilla .df-heading .df-heading-left .df-rows li.df-row-5 {
+    margin-top: -0.25mm; }
+  .df .df-shipping-torg12-mozilla .df-body .df-body-heading {
+    width: 110mm; }
+  .df .df-shipping-torg12-mozilla .df-footer .df-footer-top .df-row-4 .df-field-3 {
+    margin-left: 0.9%; } }
+.df .df-shipping-torg12-opera .df-heading .df-heading-left {
+  margin-top: 9.5mm; }
+@media print {
+  .df .df-shipping-torg12-opera .df-footer .df-footer-top .df-row-3 .df-field-2 {
+    margin-left: 0.6%; } }
+
+@media print {
+  .df .df-shipping-torg12 {
+    padding: 0;
+    border: 0; }
+
+  @page {
+    margin: 5mm;
+    td {
+      page-break-inside: avoid;
+      page-break-after: auto; }
+
+    thead {
+      display: table-header-group; }
+
+    /**
+     * ╨Э╨╡╨┐╨╛╨╜╤П╤В╨╜╨╛, ╨║╨░╨║ ╤А╨╡╤И╨░╤В╤М: http://www.greywyvern.com/code/opera/bugs/tfootinPrintPreview
+     */
+    tfoot {
+      display: table-footer-group; } } }
+#vk_like {
+  margin-top: 1em; }
+
+#vk_comments {
+  margin-top: 1em; }

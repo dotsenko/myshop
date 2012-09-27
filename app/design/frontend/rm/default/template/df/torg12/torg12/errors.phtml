@@ -1,0 +1,20 @@
+<?php /** @var Df_Torg12_Block_Frontend_Torg12_Errors $this */ ?>
+
+<?php if (0 < count ($this->getErrors())) { ?>
+	<ol class='df-errors'>
+		<?php
+			foreach ($this->getErrors() as $error) {
+
+				/** @var Mage_Core_Model_Message_Abstract $error */
+				df_assert ($error instanceof Mage_Core_Model_Message_Abstract);
+
+				?>
+					<li class='df-error'>
+						<?php echo $this->escapeHtml ($error->getText()); ?>
+					</li>
+				<?php
+			}
+		?>
+	</ol>
+<?php } ?>
+

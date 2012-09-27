@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<config>
+
+    <modules>
+        <Df_Install>
+            <version>1.0.0</version>
+        </Df_Install>
+    </modules>
+
+
+
+
+	<global>
+
+		<blocks>
+			<df_install>
+				<class>Df_Install_Block</class>
+			</df_install>
+		</blocks>
+
+
+		<helpers>
+			<df_install>
+				<class>Df_Install_Helper</class>
+			</df_install>
+		</helpers>
+
+
+		<models>
+			<df_install>
+				<class>Df_Install_Model</class>
+			</df_install>
+		</models>
+	</global>
+	
+	
+	<install>
+		<eula_file>app/design/install/rm/priority/template/install/eula.phtml</eula_file>
+	</install>
+
+</config>

@@ -1,0 +1,19 @@
+<?xml version='1.0'?>
+<layout>
+    <df_localization_dbtocsv_index>
+        <reference name='content'>
+			<block type='core/template' template='df/localization/dbToCsv.phtml' />
+        </reference>
+    </df_localization_dbtocsv_index>
+
+
+    <df_localization_verification_index>
+        <reference name='content'>
+			<block 
+				type='df_localization/admin_verification'
+				name='df.localization.admin.verification' 
+				template='df/localization/verification.phtml'
+			/>
+        </reference>
+    </df_localization_verification_index>
+</layout>

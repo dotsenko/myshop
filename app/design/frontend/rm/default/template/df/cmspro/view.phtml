@@ -1,0 +1,80 @@
+
+<?php 
+	$news = $this->getNews(); 
+	if($news){
+		$newsThumbnailSize = $this->getNewsThumbnailSize();
+	?>
+	<div class="postWrapper">
+	     <div class="cmspro_postTitle">
+	        <div class="cmspro_postTitle_title"><h1><?php echo $news->getTitle();?></h1></div>
+
+
+
+
+	    </div>
+	    <div class="cmspro_news_title">
+
+
+		    <?php
+		    	if (!df_empty ($news->getImages())) {
+		            ?>
+		                 <div class="cmspro_news_images"><img src="<?php echo $this->helper('df_cmspro/image')->init($news->getImages())->resize($newsThumbnailSize['width'], $newsThumbnailSize['height']) ?>" alt="<?php echo('') ?>" /></div>
+					<?php
+	            }
+		    ?>
+
+
+
+
+		    <div class="cmspro_news_summary"><?php echo $news->getSummary();?></div>
+	    </div>
+	    <div class="cmspro_clear">&nbsp;</div>
+	    <div class="cmspro_news_content"><?php echo $news->getContent(); ?></div>
+	    <div class="cmspro_clear">&nbsp;</div>
+	    <div class="cmspro_news_navigation">
+	    	<table width="100%"><tr>
+		 	<td class="cmspro_new_previous" style="width:33%;">
+		 	<?php $previous=$this->_getPrevious();
+		 	if($previous){ ?>
+		 		<a href="<?php echo Mage::getBaseUrl().Mage::getModel('core/url_rewrite')->load($previous->getUrlRewriteId())->getRequestPath() ?>">
+		 		<?php echo df_helper()->cmspro()->__('Previous'); ?></a>
+		 	<?php }else{ echo "&nbsp;" ;} ?>
+		 	</td>
+		 	
+		 	<td class="cmspro_new_returncat" style="width:34%;">
+		 	<?php 
+		 	$category = $this->_getCategory();
+		 	if($category){ ?>
+		 		<a href="<?php echo Mage::getBaseUrl().Mage::getModel('core/url_rewrite')->load($category->getUrlRewriteId())->getRequestPath(); ?>">
+		 		<?php echo df_helper()->cmspro()->__('Return to ').$category->getName(); ?></a>
+		 	<?php }else{ echo "&nbsp;" ;} ?>
+		 	</td>
+		 	<td class="cmspro_new_next" style="width:33%;">
+		 	<?php 
+		 	$next = $this->_getNext();
+		 	if($next){ ?>
+		 		<a href="<?php echo Mage::getBaseUrl().Mage::getModel('core/url_rewrite')->load($next->getUrlRewriteId())->getRequestPath() ?>">
+		 		<?php echo df_helper()->cmspro()->__('Next'); ?></a>
+		 	<?php }else{ echo "&nbsp;" ;} ?>		 	
+		 	</td>
+		 	</tr></table>
+		 </div>
+		 <div class="cmspro_clear">&nbsp;</div>
+
+
+
+		<div class="cmspro_news_relative">
+			<?php if($this->_getOlderNews() && (sizeof($this->_getOlderNews()->getData())>0)){ ?>
+				<h3><?php echo df_helper()->cmspro()->__('Другие материалы по теме'); ?></h3>
+				<?php
+				foreach($this->_getOlderNews() as $n){?>
+				<ul>
+					<li><a href="<?php echo Mage::getBaseUrl().Mage::getModel('core/url_rewrite')->load($n->getUrlRewriteId())->getRequestPath(); ?>"><?php echo $n->getTitle(); ?></a></li>
+				</ul>	
+				<?php	}?>
+			<?php } ?>
+		</div>
+	</div>
+	<?php }else{
+
+	}?>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+	<acl>
+		<resources>
+			<admin>
+				<children>
+					<system>
+						<children>
+							<config>
+								<children>
+									<df_pd4>
+										<title>Российская сборка: Платёжный модуль «ПД-4»</title>
+									</df_pd4>
+								</children>
+							</config>
+						</children>
+					</system>
+				</children>
+			</admin>
+		</resources>
+	</acl>
+</config>

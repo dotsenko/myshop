@@ -1,0 +1,56 @@
+<?php /** @var Df_Admin_Block_Form_Element_Image $this */ ?>
+
+
+
+<?php
+
+	if (!$this->isMissed ()) {
+
+		/**
+		 * Надо сообщить пользователю, что информация о картинке присутствует в базе данных,
+		 * но сама картинка по каким-то причинам отсутствует на сервере.
+		 */
+
+	}
+
+
+	else {
+
+
+		if ($this->getUrl ()) {
+
+			/**
+			 * Отображаем картинку
+			 */
+
+			echo
+				df_output ()->element()
+					->createImage (
+						array (
+							Df_Core_Block_Element_Image::PARAM_SRC => $this->getUrl ()
+						)
+					)
+						->renderView()
+			;
+
+		}
+
+
+
+	}
+
+
+	echo
+		df_output ()->element()
+			->createInputHidden (
+				array (
+					Df_Core_Block_Element_Input_Hidden::PARAM_NAME =>
+						$this->getInputName () . "[value]"
+					,
+					Df_Core_Block_Element_Input_Hidden::PARAM_VALUE =>
+						$this->getImageName()
+				)
+			)
+				->renderView()
+	;
+

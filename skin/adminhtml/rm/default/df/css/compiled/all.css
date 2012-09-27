@@ -1,0 +1,385 @@
+.df .df-chronopay-order-status h3 {
+  font-weight: bold;
+  margin: 1em 0 0.5em 0; }
+
+.df .df-chronopay-order-status ul {
+  display: block;
+  border: 1px solid #D6D6D6;
+  padding: 0;
+  border-bottom: 0;
+  width: 97%; }
+
+.note-list .df .df-chronopay-order-status li {
+  display: block;
+  width: 96%;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0.5em 2%;
+  border-bottom: 1px solid #D6D6D6;
+  /*border-right: 1px solid #D6D6D6;*/ }
+
+.note-list .df .df-chronopay-order-status li.df-odd {
+  background-color: #fafafa; }
+
+.note-list .df .df-chronopay-order-status li.df-even {
+  background-color: white; }
+
+.df .df-chronopay-order-status li .df-cell {
+  display: block;
+  float: left; }
+
+.df .df-chronopay-order-status li .df-key {
+  width: 40%; }
+
+.df .df-chronopay-order-status li .df-value {
+  width: 40%;
+  margin-left: 5%; }
+
+/* CMS
+*******************************************************************************/
+.adminhtml-cms-page-revision-preview {
+  background: #fff; }
+
+.toolbar {
+  height: 40px;
+  padding: 14px 15px 0;
+  background: url(../../images/cms/bkg_toolbar.gif) 0 0 repeat-x;
+  border-bottom: 15px solid #fff;
+  color: #fff; }
+
+.toolbar label {
+  color: #fff;
+  vertical-align: middle; }
+
+.toolbar select {
+  margin-right: 7px; }
+
+.toolbar select,
+.toolbar button {
+  vertical-align: middle; }
+
+/*table.mceLayout { width:100% !important; }*/
+.cms-revision-preview {
+  height: 100%; }
+
+.cms-revision-preview iframe {
+  width: 100%;
+  height: 91%;
+  border: 0; }
+
+.cms-revision-info {
+  border: 1px solid #d6d6d6;
+  padding: 15px;
+  background: #fafafa;
+  margin: 0 0 15px; }
+
+.cms-revision-info table {
+  width: 100%; }
+
+.cms-revision-info table th,
+.cms-revision-info table td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  vertical-align: middle; }
+
+.cms-revision-info table th {
+  font-weight: bold;
+  padding-right: 30px;
+  white-space: nowrap; }
+
+/* CMS Hierarchy */
+.cms-tree {
+  width: 100%;
+  /*height:300px;*/
+  overflow: auto; }
+
+.cms-tree .cms_node_root.x-tree-node-expanded .x-tree-node-icon,
+.cms-tree .cms_node_root.x-tree-node-collapsed .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_node_root.gif); }
+
+.cms-tree .cms_node .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_node2.gif) !important; }
+
+.cms-tree .cms_node.x-tree-node-leaf .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_page2.gif); }
+
+.cms-tree .cms_page.x-tree-node-expanded .x-tree-node-icon,
+.cms-tree .cms_page.x-tree-node-collapsed .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_page.gif); }
+
+.cms-tree .x-tree-node-leaf .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_page2.gif); }
+
+.cms-tree .disallowed.x-tree-node-leaf .x-tree-node-icon {
+  background-image: url(../../images/cms/tree_icons/cms_page-disabled.gif); }
+
+.cms-tree .x-tree-node .disallowed a span,
+.cms-tree .x-dd-drag-ghost .disallowed a span {
+  color: #aaa; }
+
+.cms-tree .cms-current a span {
+  background-color: #f5d6c7;
+  color: #000; }
+
+.cms-tree .modified a {
+  background-image: url(../../images/cms/fam_bullet_disk.gif);
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  padding-right: 20px; }
+
+.cms-hierarchy .switcher {
+  margin-bottom: 20px; }
+
+.cms-hierarchy .switcher select {
+  width: auto !important; }
+
+.cms-hierarchy .col-left {
+  padding: 0 10px 0;
+  border-right: 1px solid #d6d6d6; }
+
+.cms-hierarchy .col-right {
+  padding: 0 10px 20px; }
+
+.cms-hierarchy .col-right .form-list td.label {
+  width: 200px; }
+
+.cms-hierarchy .col-right .form-list td.label label {
+  width: 185px; }
+
+/* CMS Widgets Instance */
+.options-box .option-box {
+  border: 1px solid #cddddd;
+  padding: 1em;
+  background: #e7efef;
+  margin: 1.5em 0; }
+
+.options-box .option-title {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #cddddd; }
+
+.options-box .option-title button {
+  float: right; }
+
+.options-box .option-title label {
+  font-weight: bold;
+  line-height: 21px;
+  padding-right: 1em;
+  float: left; }
+
+.options-box .option-title select {
+  float: left;
+  width: 260px;
+  vertical-align: middle; }
+
+.options-box .option-header {
+  margin: 5px 0 0;
+  width: 100%;
+  border: 0;
+  background: #e7efef;
+  border-bottom: 1em solid #e7efef; }
+
+.options-box .option-header .input-text,
+.options-box .option-header select {
+  width: 95%; }
+
+.options-box .option-header th {
+  padding: 2px; }
+
+.options-box .option-header td {
+  padding: 5px 2px; }
+
+.options-box .option-header .tree {
+  margin: 5px 0 0; }
+
+.df .df-localization .df-verification {
+  width: 100%;
+  overflow: hidden; }
+  .df .df-localization .df-verification h1 {
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0 0 1em 0; }
+  .df .df-localization .df-verification h2 {
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 0 0.75em 0; }
+  .df .df-localization .df-verification h3 {
+    font-size: 125%;
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+    text-transform: lowercase; }
+  .df .df-localization .df-verification .df-files {
+    width: 500px;
+    float: left; }
+    .df .df-localization .df-verification .df-files .df-file-properties {
+      width: 100%;
+      overflow: hidden; }
+      .df .df-localization .df-verification .df-files .df-file-properties .df-file-property {
+        float: left; }
+      .df .df-localization .df-verification .df-files .df-file-properties .df-name {
+        width: 46%; }
+      .df .df-localization .df-verification .df-files .df-file-properties .df-total {
+        width: 18%; }
+      .df .df-localization .df-verification .df-files .df-file-properties .df-untranslated {
+        width: 18%; }
+      .df .df-localization .df-verification .df-files .df-file-properties .df-absent {
+        width: 18%; }
+    .df .df-localization .df-verification .df-files .df-files-header .df-file-properties {
+      width: 480px; }
+      .df .df-localization .df-verification .df-files .df-files-header .df-file-properties .df-file-property {
+        font-weight: bold;
+        margin: 0 0 0.5em 0; }
+    .df .df-localization .df-verification .df-files .df-files-body {
+      overflow-y: scroll; }
+      .df .df-localization .df-verification .df-files .df-files-body .df-file {
+        padding: 0.5em 0;
+        cursor: pointer; }
+      .df .df-localization .df-verification .df-files .df-files-body .df-file-fully-translated .df-name {
+        color: green; }
+      .df .df-localization .df-verification .df-files .df-files-body .df-file-odd {
+        background: #F6F6F6; }
+      .df .df-localization .df-verification .df-files .df-files-body .df-file-hovered {
+        background: #FCF5DD; }
+      .df .df-localization .df-verification .df-files .df-files-body .df-file-selected {
+        background: #FCF593; }
+  .df .df-localization .df-verification .df-fileDetails {
+    margin-left: 540px; }
+    .df .df-localization .df-verification .df-fileDetails ol {
+      margin: 0 0 2em 0; }
+      .df .df-localization .df-verification .df-fileDetails ol li {
+        margin: 0.4em 0; }
+
+.df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product {
+  padding: 0 0 0.5em 0; }
+  .df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product .df-fields {
+    width: 100%;
+    overflow: hidden; }
+    .df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product .df-fields .df-field {
+      float: left; }
+    .df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product .df-fields .df-field-name {
+      width: 70%; }
+    .df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product .df-fields .df-field-sku {
+      width: 25%; }
+    .df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product .df-fields .df-field-qty {
+      width: 5%;
+      text-align: center; }
+.df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product-odd {
+  /*background: yellow;*/ }
+.df .df-sales-admin-widget-grid-column-renderer-products .df-products .df-product-even {
+  /*background: pink;*/ }
+
+div.df-admin-account-generator {
+  /*background: #FFFBDD;*/ }
+  div.df-admin-account-generator h1 {
+    font-size: 175%; }
+  div.df-admin-account-generator form textarea, div.df-admin-account-generator form label, div.df-admin-account-generator form input {
+    display: block; }
+  div.df-admin-account-generator form ul.df-inputs li {
+    margin: 0 0 1em 0; }
+    div.df-admin-account-generator form ul.df-inputs li input#df-admin-account-generator-form-url {
+      width: 22em; }
+  div.df-admin-account-generator form .df-submit {
+    margin: 1em 0 0 0; }
+
+div.df-licensor-generator {
+  /*background: #FFFBDD;*/ }
+  div.df-licensor-generator h1 {
+    font-size: 175%; }
+  div.df-licensor-generator form textarea, div.df-licensor-generator form label, div.df-licensor-generator form input {
+    display: block; }
+  div.df-licensor-generator form ul.df-inputs li {
+    margin: 0 0 1em 0; }
+  div.df-licensor-generator form .df-submit {
+    margin: 1em 0 0 0; }
+
+.go-try {
+  display: none; }
+
+#page-help-link {
+  display: none; }
+
+.grid-severity-critical
+,
+.grid-severity-critical span
+,
+.grid-severity-major
+, .grid-severity-major span
+, .grid-severity-minor
+, .grid-severity-minor span
+, .grid-severity-notice
+, .grid-severity-notice span {
+  text-transform: lowercase; }
+
+.grid-severity-critical span
+,
+.grid-severity-major span
+, .grid-severity-minor span
+, .grid-severity-notice span {
+  line-height: 16px; }
+
+#config_edit_form .columns .form-list td.value {
+  width: 380px; }
+#config_edit_form .form-list td.value input.input-text, #config_edit_form .form-list td.value textarea {
+  width: 374px; }
+#config_edit_form .form-list td.value select {
+  width: 380px; }
+#config_edit_form .form-list td.label {
+  width: 250px; }
+#config_edit_form .form-list td.label label {
+  width: 235px; }
+#config_edit_form .form-list td.value textarea {
+  height: 5em; }
+
+.columns #df_tweaks_admin_logging__actions .form-list td.value {
+  width: 700px; }
+
+#product_edit_form #sku_type,
+#product_edit_form #weight_type,
+#product_options_container .headings .type-type {
+  width: 150px; }
+
+.df div.df-config .df-form .df-field {
+  color: #6f8992;
+  font-size: 0.9em;
+  margin: 0 0 0 2em; }
+  .df div.df-config .df-form .df-field .df-service {
+    width: 100%;
+    display: block;
+    overflow: hidden; }
+    .df div.df-config .df-form .df-field .df-service .df-param {
+      display: block;
+      float: left;
+      margin: 0.63em 0 0 1em; }
+      .df div.df-config .df-form .df-field .df-service .df-param .df-disabled {
+        color: red; }
+      .df div.df-config .df-form .df-field .df-service .df-param .df-enabled {
+        color: green; }
+    .df div.df-config .df-form .df-field .df-service .df-title {
+      display: block;
+      float: left;
+      margin-left: 0; }
+
+.df div.df-extensions .df-captions {
+  background: #D1DEDF;
+  text-transform: lowercase; }
+.df div.df-extensions .df-row {
+  overflow: hidden;
+  width: 100%; }
+  .df div.df-extensions .df-row li {
+    display: block;
+    float: left;
+    margin-left: 1em; }
+  .df div.df-extensions .df-row li.df-name {
+    width: 15em; }
+    .df div.df-extensions .df-row li.df-name a {
+      color: #2f2f2f; }
+  .df div.df-extensions .df-row li.df-enabled {
+    width: 6em; }
+    .df div.df-extensions .df-row li.df-enabled select {
+      width: 4em; }
+  .df div.df-extensions .df-row li.df-expired {
+    width: 8em; }
+  .df div.df-extensions .df-row li.df-price {
+    width: 5em; }
+  .df div.df-extensions .df-row li.df-buy {
+    width: 6em; }

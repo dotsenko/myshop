@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<Df_Admin>
+			<version>1.0.0</version>
+		</Df_Admin>
+	</modules>
+
+
+	<df>
+		<features>
+			<df-dataflow>
+				<title>Импорт и экспорт</title>
+				<url>http://magento-forum.ru/russian</url>
+			</df-dataflow>
+			<df-dataflow-categories>
+				<title>Импорт и экспорт товарных разделов</title>
+				<url>http://magento-forum.ru/topic/764/</url>
+			</df-dataflow-categories>
+			<df-dataflow-co>
+				<title>Импорт и экспорт Custom Options</title>
+				<url>http://magento-forum.ru/topic/763/</url>
+			</df-dataflow-co>
+			<df-dataflow-images>
+				<title>Импорт и экспорт картинок</title>
+				<url>http://magento-forum.ru/topic/762/</url>
+			</df-dataflow-images>
+			<df-free>
+				<title>Бесплатное</title>
+				<url>http://magento-forum.ru/russian</url>
+			</df-free>
+			<df-gallery>
+				<title>Иллюстрации</title>
+				<url>http://magento-forum.ru/russian</url>
+			</df-gallery>
+			<df-localization>
+				<title>Русификация</title>
+				<url>http://magento-forum.ru/topic/712/</url>
+			</df-localization>
+			<df-seo>
+				<title>Поисковая оптимизация</title>
+				<url>http://magento-forum.ru/topic/594/</url>
+			</df-seo>
+			<df-tweaks>
+				<title>Витрина</title>
+				<url>http://magento-forum.ru/topic/796/</url>
+			</df-tweaks>
+			<df-tweaks-admin>
+				<title>Административная часть</title>
+				<url>http://magento-forum.ru/russian</url>
+			</df-tweaks-admin>
+		</features>
+
+		<admin>
+			<config-form>
+				<element-types>
+					<df-multiselect>df_admin/config_form_element_multiselect</df-multiselect>
+				</element-types>
+			</config-form>
+		</admin>
+	</df>
+
+
+	<global>
+
+		<blocks>
+			<df_admin>
+				<class>Df_Admin_Block</class>
+			</df_admin>
+		</blocks>
+
+		<helpers>
+			<df_admin>
+				<class>Df_Admin_Helper</class>
+			</df_admin>
+		</helpers>
+
+		<models>
+			<df_admin>
+				<class>Df_Admin_Model</class>
+			</df_admin>
+		</models>
+
+	</global>
+
+
+	<adminhtml>
+		<translate>
+			<modules>
+				<Df_Admin>
+					<files>
+						<default>Df_Admin.csv</default>
+					</files>
+				</Df_Admin>
+			</modules>
+		</translate>
+	</adminhtml>
+
+
+
+	<default>
+		<df_tweaks_admin>
+
+			<interface>
+				<form_label__font__letter_case>default</form_label__font__letter_case>
+				<grid_label__font__letter_case>default</grid_label__font__letter_case>
+				<button_label__font__letter_case>default</button_label__font__letter_case>
+			</interface>
+
+
+			<system_tools_compilation>
+				<fix>1</fix>
+			</system_tools_compilation>
+
+
+			<system_indices>
+				<varchar_length>0</varchar_length>
+			</system_indices>
+
+
+			<catalog_product>
+				<fix_bundle_js>0</fix_bundle_js>
+			</catalog_product>
+
+
+			<wysiwyg>
+				<fix_headers_already_sent>0</fix_headers_already_sent>
+				<fix_images>0</fix_images>
+			</wysiwyg>
+
+
+			<other>
+				<jquery_load_mode>load-from-local</jquery_load_mode>
+			</other>
+
+		</df_tweaks_admin>
+	</default>
+
+</config>

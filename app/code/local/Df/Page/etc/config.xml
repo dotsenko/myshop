@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Page>
+            <version>1.0.0</version>
+        </Df_Page>
+    </modules>
+
+	<global>
+
+		<blocks>
+			<df_page>
+				<class>Df_Page_Block</class>
+			</df_page>
+
+			<page>
+				<rewrite>
+					<html_head>Df_Page_Block_Html_Head</html_head>
+					<html_header>Df_Page_Block_Html_Header</html_header>
+					<template_links>Df_Page_Block_Template_Links</template_links>
+				</rewrite>
+			</page>
+		</blocks>
+
+		<helpers>
+			<df_page>
+				<class>Df_Page_Helper</class>
+			</df_page>
+		</helpers>
+
+		<models>
+			<df_page>
+				<class>Df_Page_Model</class>
+			</df_page>
+		</models>
+
+
+	</global>
+
+    <default>
+        <design>
+            <head translate="default_description" module="page">
+                <default_title>Российская сборка Magento</default_title>
+                <default_description></default_description>
+                <default_keywords></default_keywords>
+            </head>
+            <header translate="welcome" module="page">
+                <logo_alt>Российская сборка Magento</logo_alt>
+                <welcome>Добро пожаловать!</welcome>
+            </header>
+            <footer translate="copyright" module="page">
+                <copyright>Российская сборка Magento</copyright>
+            </footer>
+        </design>
+    </default>
+</config>

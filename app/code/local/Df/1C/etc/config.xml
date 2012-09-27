@@ -1,0 +1,86 @@
+<?xml version='1.0'?>
+<config>
+    <modules>
+        <Df_1C>
+             <version>1.0.2</version>
+        </Df_1C>
+    </modules>
+
+
+    <global>
+        <models>
+            <df_1c>
+                <class>Df_1C_Model</class>
+            </df_1c>
+        </models>
+        <blocks>
+            <df_1c>
+                <class>Df_1C_Block</class>
+            </df_1c>
+        </blocks>
+        <helpers>
+            <df_1c>
+                <class>Df_1C_Helper</class>
+            </df_1c>
+        </helpers>
+
+		<resources>
+			<df_1c_setup>
+				<setup>
+					<module>Df_1C</module>
+					<class>Df_1C_Model_Resource_Setup</class>
+				</setup>
+			</df_1c_setup>
+		</resources>
+
+		<ignoredModules>
+			<entities>
+				<df-1c/>
+			</entities>
+		</ignoredModules>
+
+    </global>
+
+
+	<frontend>
+		<routers>
+			<df-1c>
+				<use>standard</use>
+				<args>
+					<module>Df_1C</module>
+					<frontName>df-1c</frontName>
+				</args>
+			</df-1c>
+		</routers>
+	</frontend>
+
+
+
+	<df>
+		<features>
+			<df-1c>
+				<module>df_1c</module>
+				<title>1С: Управление торговлей</title>
+				<url>http://magento-forum.ru/forum/217/</url>
+			</df-1c>
+		</features>
+	</df>
+
+
+	<default>
+		<df_1c>
+			<general>
+				<enabled>0</enabled>
+				<enable_logging>0</enable_logging>
+			</general>
+			<orders>
+			</orders>
+			<products>
+				<main_price_name>Розничная</main_price_name>
+				<attributes__show_on_product_page>1</attributes__show_on_product_page>
+			</products>
+		</df_1c>
+	</default>
+
+
+</config>

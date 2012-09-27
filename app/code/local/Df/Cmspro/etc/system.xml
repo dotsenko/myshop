@@ -1,0 +1,420 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <df_cmspro translate="label" module="df_cmspro">
+            <label>Статьи [устаревший]</label>
+            <tab>df</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>90</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<info translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+                    	<enabled translate="label">
+                            <label>Включить?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							<df_feature>df-cms-1</df_feature>
+                        </enabled>
+
+                    	<category_suffix translate="label">
+                            <label>Category Suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <comment>например: «.html»</comment>
+		                    <depends><enabled>1</enabled></depends>
+                        </category_suffix>
+
+
+						<news_suffix translate="label">
+                            <label>News Suffix</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>27</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<depends><enabled>1</enabled></depends>
+                        </news_suffix>
+
+
+                        <photo_background_color>
+                        	<label>Photo Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>28</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+	                        <comment>RGB, через запятую, например: «255,255,255»</comment>
+	                        <depends><enabled>1</enabled></depends>
+                        </photo_background_color>
+
+
+						<news_thumbnail_size translate="label">
+                            <label>News Thumb Size (w-h)px</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<comment>здесь и далее в размеры указываются в виде длины и
+								ширины в пикселях через дефис, например: «128-128»
+							</comment>
+							<depends><enabled>1</enabled></depends>
+                        </news_thumbnail_size>
+
+
+                        <latest_news_thumbnail_size translate="label">
+                        	<label>Latest News Thumb Size (w-h)px</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+	                        <depends><enabled>1</enabled></depends>
+                        </latest_news_thumbnail_size>
+
+
+						<backend_thumbnail_size translate="label">
+                            <label>Admin Thumb Size (w-h)px</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<depends><enabled>1</enabled></depends>
+                        </backend_thumbnail_size>
+
+
+						<news_per_page_allowed translate="label">
+                            <label>News Per Page Allowed Values</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>32</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                            <comment>например: «5,10,15»)</comment>
+							<depends><enabled>1</enabled></depends>
+                        </news_per_page_allowed>
+
+                        
+						<news_per_page_default_value translate="label">
+                            <label>News Per Page Default Value</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>33</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+							<depends><enabled>1</enabled></depends>
+                        </news_per_page_default_value>
+
+                        
+						<number_newer_news translate="label">
+                            <label>Number Of Newer News</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>34</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                            <comment>Default: 5 </comment>
+							<depends><enabled>1</enabled></depends>
+                        </number_newer_news>
+
+                        
+                        <number_older_news translate="label">
+                            <label>Number Of Older News</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                            <comment>Default: 5 </comment>
+	                        <depends><enabled>1</enabled></depends>
+                        </number_older_news>
+                    </fields>
+                </info>
+
+               
+                <menu translate="label" module="df_cmspro">
+                    <label>Category Menu Settings</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                    	<add_to_standard_category_menu translate="label">
+                            <label>Добавить меню рубрик в стандартное товарное меню?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </add_to_standard_category_menu>
+
+
+                        <show_root translate="label">
+                            <label>Отображать ли посетителям корневую рубрику?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </show_root>
+
+                        <leftmenu translate="label">
+                            <label>Enable Left Menu</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_fieldsleft</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </leftmenu>  
+						<rightmenu translate="label">
+                            <label>Enable Right Menu</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_fieldsright</source_model>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                             <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </rightmenu>
+                        <collapse translate="label">
+                            <label>Auto Collapse / Expand</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </collapse>  
+						
+						<deeplevel translate="label">
+                            <label>Category Item Level</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_fieldsdeeplevel</source_model>
+                            <sort_order>16</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                             <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </deeplevel>
+                    </fields>
+                </menu>
+                <news translate="label" module="df_cmspro">
+                    <label>News Settings</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                    	<show_latest_news translate="label">
+                            <label>Display Latest News Block</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_status</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </show_latest_news>
+
+                    	<show_featured_news translate="label">
+                            <label>Показывать блок важных материалов?</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_status</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </show_featured_news>
+
+                        <number_news_latest translate="label">
+                            <label>Number Of Latest News Block</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </number_news_latest>
+                        <root_cmspro_name translate="label">
+                            <label>Root CMS Pro Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </root_cmspro_name>
+                    </fields>
+                </news>
+
+
+                <featured translate="label" module="df_cmspro">
+                    <label>Блок «Важное»</label>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+
+
+                    	<enabled translate="label">
+                            <label>Включить?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+                        </enabled>
+
+
+                    	<position translate="label">
+                            <label>В какой колонке отображать?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>df_cmspro/system_config_source_featured_position</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </position>
+
+
+                    	<show_on_cmspro_article_list translate="label">
+                            <label>Отображать на странице списка статей?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </show_on_cmspro_article_list>
+
+
+                    	<show_on_cmspro_article_view translate="label">
+                            <label>Отображать на странице статьи?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </show_on_cmspro_article_view>
+
+
+                    	<show_on_frontpage translate="label">
+                            <label>Отображать на главной странице магазина?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </show_on_frontpage>
+
+
+                    	<show_on_catalog_product_list translate="label">
+                            <label>Отображать на странице списка товаров?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </show_on_catalog_product_list>
+
+
+                    	<show_on_catalog_product_view translate="label">
+                            <label>Отображать на странице товара?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<frontend_model>df_admin/system_config_form_field</frontend_model>
+							
+		                    <depends><enabled>1</enabled></depends>
+                        </show_on_catalog_product_view>
+
+                    </fields>
+                </featured>
+            </groups>
+        </df_cmspro>
+    </sections>
+</config>

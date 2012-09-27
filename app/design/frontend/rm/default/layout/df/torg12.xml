@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<df_torg12_frontend_torg12_index>
+
+		<reference name='root'>
+
+			<action method='setTemplate'>
+				<template>df/torg12/page.phtml</template>
+			</action>
+
+			<block
+				type='df_torg12/frontend_torg12'
+				name='df.shipping.document'
+				template='df/torg12/torg12.phtml'
+			/>
+		</reference>
+
+
+		<reference name='head'>
+			<action method='removeItem'>
+				<type>skin_css</type>
+				<name>css/print.css</name>
+			</action>
+		</reference>
+
+	</df_torg12_frontend_torg12_index>
+
+</layout>

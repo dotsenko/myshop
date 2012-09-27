@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Shipping>
+            <version>1.0.0</version>
+			<author>Дмитрий Федюк</author>
+        </Df_Shipping>
+    </modules>
+
+
+	<global>
+
+		<blocks>
+			<df_shipping>
+				<class>Df_Shipping_Block</class>
+			</df_shipping>
+		</blocks>
+
+		<helpers>
+			<df_shipping>
+				<class>Df_Shipping_Helper</class>
+			</df_shipping>
+		</helpers>
+
+		<models>
+			<df_shipping>
+				<class>Df_Shipping_Model</class>
+			</df_shipping>
+
+			<shipping>
+				<rewrite>
+					<config>Df_Shipping_Model_Config</config>
+				</rewrite>
+			</shipping>
+		</models>
+
+	</global>
+
+
+	<default>
+		<carriers>
+			<dhlint>
+				<!-- Заплатка для Magento CE 1.7.0.0 -->
+				<content_type>D</content_type>
+
+				<!--
+					Заплатка для Magento CE версий <= 1.6.0.0
+				-->
+				<model>usa/shipping_carrier_dhl_international</model>
+			</dhlint>
+		</carriers>
+
+		<df_shipping>
+			<product>
+				<units__weight>gram</units__weight>
+				<units__length>millimetre</units__length>
+				<attribute_name__length>length</attribute_name__length>
+				<attribute_name__width>width</attribute_name__width>
+				<attribute_name__height>height</attribute_name__height>
+				<default__weight>100</default__weight>
+				<default__length>400</default__length>
+				<default__width>300</default__width>
+				<default__height>200</default__height>
+			</product>
+		</df_shipping>
+
+	</default>
+
+
+</config>

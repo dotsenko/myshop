@@ -1,0 +1,1135 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+
+		<Df_1C>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_1C>
+
+
+		<Df_Assist>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Assist>
+
+
+		<Df_AccessControl>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_AccessControl>
+
+
+
+		<Df_Admin>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Admin>
+
+
+
+
+		<Df_Adminhtml>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Adminhtml/>
+			</depends>
+		</Df_Adminhtml>
+
+
+
+
+		<Df_AdminNotification>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_AdminNotification/>
+			</depends>
+		</Df_AdminNotification>
+
+
+
+		<Df_Api>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Mage_Api/>
+			</depends>
+		</Df_Api>
+
+
+
+		<Df_Api2>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<!--
+					Нельзя ставить зависимость от Mage_Api2,
+					потому что этот модуль отсутствует в Magento CE < 1.7
+				-->
+			</depends>
+		</Df_Api2>
+
+
+
+		<Df_Autotrading>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Autotrading>
+
+
+
+
+		<Df_Banner>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Banner>
+
+
+
+
+
+		<Df_Bundle>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Bundle/>
+			</depends>
+		</Df_Bundle>
+
+
+
+
+		<Df_Catalog>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Catalog/>
+			</depends>
+		</Df_Catalog>
+
+
+
+
+
+		<Df_CatalogInventory>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_CatalogInventory/>
+			</depends>
+		</Df_CatalogInventory>
+
+		
+		
+		<Df_CatalogSearch>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_CatalogSearch/>
+			</depends>
+		</Df_CatalogSearch>		
+		
+
+
+
+		<Df_Checkout>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Checkout/>
+			</depends>
+		</Df_Checkout>
+
+
+
+
+        <Df_Chronopay>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Phpquery/>
+			</depends>
+        </Df_Chronopay>
+
+
+
+		<Df_Client>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Client>
+
+
+
+
+		<Df_Connect>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<!-- модуль Mage Connect отсутствует в Magento 1.4 -->
+			</depends>
+		</Df_Connect>
+
+
+
+		<Df_Contacts>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Contacts/>
+			</depends>
+		</Df_Contacts>
+
+
+
+		<Df_Cms>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Cms/>
+			</depends>
+		</Df_Cms>
+
+
+
+        <Df_Cmspro>
+            <active>false</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+        </Df_Cmspro>
+
+
+		<Df_Compiler>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<!--
+					Mage_Compiler может отсутствовать в Magento 1.4.0.1
+				-->
+
+				<!--
+				<Mage_Compiler/>
+				-->
+			</depends>
+		</Df_Compiler>
+
+
+		<Df_Core>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Df_Core>
+
+
+
+		<Df_CurrencySymbol>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<!--
+					Не указываем зависимость от Mage_CurrencySymbol,
+					потому что этот модуль отсутствует в Magento CE ранее версии 1.7
+				-->
+			</depends>
+		</Df_CurrencySymbol>
+
+
+
+
+		<Df_Customer>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Customer/>
+			</depends>
+		</Df_Customer>
+
+
+
+		<Df_CustomerBalance>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Customer/>
+			</depends>
+		</Df_CustomerBalance>
+
+
+
+		<Df_Dataflow>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Dataflow/>
+			</depends>
+		</Df_Dataflow>
+
+
+
+
+		<Df_Dellin>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Dellin>
+
+
+
+
+		<Df_Directory>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Directory/>
+			</depends>
+		</Df_Directory>
+
+
+
+
+		<Df_Downloadable>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Downloadable/>
+			</depends>
+		</Df_Downloadable>
+
+		
+		
+		<Df_EasyPay>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_EasyPay>		
+		
+		
+
+
+
+		<Df_Eav>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Eav/>
+			</depends>
+		</Df_Eav>
+
+
+
+
+		<Df_Ems>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Ems>
+
+
+
+
+		<Df_Excel>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Excel>
+
+
+
+
+        <Df_Gallery>
+            <active>false</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+        </Df_Gallery>
+
+
+
+
+		<Df_Garantpost>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Garantpost>
+
+
+
+
+        <Df_Index>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Index/>
+			</depends>
+        </Df_Index>
+
+
+
+
+		<Df_Install>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Install/>
+			</depends>
+		</Df_Install>
+
+
+
+		<Df_Interkassa>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Interkassa>
+
+
+
+
+		<Df_Invitation>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Adminhtml/>
+				<Mage_Customer/>
+			</depends>
+		</Df_Invitation>
+
+
+
+		<Df_IPay>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_IPay>
+
+
+
+
+		<Df_Licensor>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Licensor>
+
+
+
+		<Df_LiqPay>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_LiqPay>
+
+
+
+
+        <Df_Localization>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+        </Df_Localization>
+
+
+
+
+		<Df_Logging>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Logging>
+
+
+
+
+		<Df_Megapolis>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Megapolis>
+
+
+
+
+		<Df_Moneta>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Moneta>
+
+
+
+		<Df_Newsletter>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Newsletter/>
+			</depends>
+		</Df_Newsletter>
+
+
+
+
+		<Df_OnPay>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_OnPay>
+
+
+
+		<Df_Page>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Page/>
+			</depends>
+		</Df_Page>
+
+
+
+
+		<Df_PageCache>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_PageCache>
+
+
+
+
+		<Df_Payment>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Payment>
+
+
+
+
+		<Df_PayOnline>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_PayOnline>
+
+
+
+
+		<Df_Pd4>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Pd4>
+
+
+
+
+		<Df_Pec>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Pec>
+
+
+
+
+		<Df_Pel>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core />
+				<Df_Licensor/>
+			</depends>
+		</Df_Pel>
+
+
+
+
+
+		<Df_Phpquery>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core />
+				<Df_Licensor/>
+			</depends>
+		</Df_Phpquery>
+
+
+
+
+		<Df_PonyExpress>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_PonyExpress>
+
+
+
+
+        <Df_PromoGift>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+        </Df_PromoGift>
+
+
+
+
+        <Df_Promotion>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_CatalogRule/>
+				<Mage_SalesRule/>
+			</depends>
+        </Df_Promotion>
+
+
+
+
+        <Df_Qa>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+        </Df_Qa>
+
+
+
+
+		<Df_Qiwi>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Qiwi>
+
+
+
+
+		<Df_RbkMoney>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_RbkMoney>
+
+
+
+
+        <Df_Reports>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core />
+				<Df_Licensor/>
+				<Mage_Adminhtml/>
+				<Mage_Reports/>
+			</depends>
+        </Df_Reports>
+
+
+
+
+		<Df_Reward>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+                <Mage_Customer/>
+                <Mage_Checkout/>
+			</depends>
+		</Df_Reward>
+
+
+
+
+        <Df_Robokassa>
+            <active>true</active>
+            <codePool>local</codePool>
+			<depends>
+				<Df_Core />
+				<Df_Licensor/>
+			</depends>
+        </Df_Robokassa>
+
+
+
+
+		<Df_RussianPost>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_RussianPost>
+
+
+
+
+		<Df_Sales>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Sales/>
+			</depends>
+		</Df_Sales>
+
+
+
+		<Df_SalesRule>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_SalesRule/>
+			</depends>
+		</Df_SalesRule>
+
+
+
+<!--
+		<Df_Sdec>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Sdec>
+-->
+
+
+
+		<Df_Seo>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Pel/>
+			</depends>
+		</Df_Seo>
+
+
+
+
+		<Df_Sitemap>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+
+				<!--
+					Mage_Sitemap может отсутствовать в Magento 1.4.0.1
+				-->
+
+				<!--
+				<Mage_Sitemap/>
+				-->
+			</depends>
+		</Df_Sitemap>
+
+
+
+		<Df_Shipping>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Shipping/>
+			</depends>
+		</Df_Shipping>
+
+
+
+		<Df_Speed>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Speed>
+
+
+
+		<Df_Spl>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Spl>
+
+
+
+		<Df_Spsr>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Spsr>
+
+
+
+		<Df_Tag>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Tag/>
+			</depends>
+		</Df_Tag>
+
+
+
+		<Df_Tax>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Tax/>
+			</depends>
+		</Df_Tax>
+
+
+
+		<Df_Torg12>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Shipping/>
+			</depends>
+		</Df_Torg12>
+
+
+
+
+		<Df_Tweaks>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Tweaks>
+
+
+
+
+		<Df_Uniteller>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_Uniteller>
+
+
+
+		<Df_Varien>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Varien>
+
+
+
+
+		<Df_Vk>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+			</depends>
+		</Df_Vk>
+
+
+
+
+		<Df_WalletOne>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_WalletOne>
+
+
+
+		<Df_WebMoney>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_WebMoney>
+
+
+
+		<Df_WebPay>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Df_Payment/>
+				<Mage_Payment/>
+			</depends>
+		</Df_WebPay>
+
+
+
+		<Df_Weee>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Weee/>
+			</depends>
+		</Df_Weee>
+
+
+
+
+		<Df_Widget>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Widget/>
+			</depends>
+		</Df_Widget>
+
+
+
+		<Df_Wishlist>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+				<Df_Licensor/>
+				<Mage_Wishlist/>
+			</depends>
+		</Df_Wishlist>
+
+
+
+		<Df_Zf>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<Df_Core/>
+			</depends>
+		</Df_Zf>
+
+	</modules>
+</config>

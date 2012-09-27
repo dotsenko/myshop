@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Df_Tag>
+            <version>1.0.0</version>
+        </Df_Tag>
+    </modules>
+
+	<global>
+
+		<blocks>
+			<df_tag>
+				<class>Df_Tag_Block</class>
+			</df_tag>
+
+			<tag>
+				<rewrite>
+					<popular>Df_Tag_Block_Popular</popular>
+				</rewrite>
+			</tag>
+		</blocks>
+
+		<helpers>
+			<df_tag>
+				<class>Df_Tag_Helper</class>
+			</df_tag>
+		</helpers>
+
+	</global>
+
+
+</config>
