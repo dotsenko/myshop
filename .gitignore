@@ -1,1 +1,6 @@
 app/etc/local.xml
+var/session/
+media/catalog/
+var/locks/
+var/cache/
+var/log/
