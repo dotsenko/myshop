@@ -47,6 +47,7 @@ Default layout, loads most of the pages
     <remove name="right.reports.product.viewed"/>
     <remove name="right.reports.product.compared"/>
     <remove name="sale.reorder.sidebar"/>
+    <remove name="leftnav"/>
     <!-- Mage_Catalog -->
 		<reference name="header">
 		   <block type="core/template" name="connect" as="connect" template="callouts/connect.phtml" />
