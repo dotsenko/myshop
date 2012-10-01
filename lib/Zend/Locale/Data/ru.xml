@@ -3756,6 +3756,7 @@
 			</currency>
 			<currency type="UAH">
 				<displayName>Украинская гривна</displayName>
+			        <symbol>грн.</symbol>
 			</currency>
 			<currency type="UAK">
 				<displayName>Карбованец (украинский)</displayName>
