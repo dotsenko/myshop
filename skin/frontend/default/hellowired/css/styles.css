@@ -29,6 +29,7 @@
 .product-description {width:100px; }
 .product-description p {height: 50px; overflow: hidden;}
 .feature     {float:left;}
+.im 	     {height:500px; width:400px;}
 body          { background:#e0e0e0 ; font:12px/1.55 arial, helvetica, sans-serif; color:#444; text-align:center;  }
 
 img           { border:0; vertical-align:top; }
@@ -1668,19 +1669,19 @@ f/********** Product Prices > */
 .wired-home .subpromo .offers img { margin-right: 20px; float: left;white-space: pre-wrap; }
 
 .wired-home .featured-social { margin-top: 15px; }
-.wired-home .subscribe { min-height: 110px;width: 235px; -moz-border-radius: 10px; -webkit-border-radius: 10px; float: right;background: #f4f4f4 url(../images/background/featured_product_bg.gif) repeat-x; padding: 10px 15px; }
-.wired-home .subscribe strong { font-size: 16px; }
-.wired-home .form-subscribe { margin:8px 0; background:url(../images/background/subscribe_bg.png) no-repeat; width: 233px; height: 33px; }
-.wired-home .form-subscribe label { display: none; }
-.wired-home .form-subscribe label,
-.wired-home .form-subscribe .input-box,
-.wired-home .form-subscribe button.button { float:left; }
-.wired-home .form-subscribe label { padding-top:2px; font-weight:bold; color:#555; }
-.wired-home .form-subscribe .input-box { width:136px; margin:0 5px;  }
-.wired-home .form-subscribe input.input-text { width:160px; padding: 10px 0 0 40px; background: none; border: none;}
-.wired-home .form-subscribe button.button { position:relative; float: right; top: 10px;}
-.wired-home .form-subscribe button.button span { text-indent: -9999px; height:13px;width: 12px; background: transparent url(../images/buttons/subscribe_btn.gif) no-repeat top left; line-height:13px; }
-.wired-home .form-subscribe button.button span span { background: none !important; color: #444 !important; text-shadow: 0px 1px #fff !important; }
+.subscribe { min-height: 110px;width: 235px; -moz-border-radius: 10px; -webkit-border-radius: 10px; float: right;background: #f4f4f4 url(../images/background/featured_product_bg.gif) repeat-x; padding: 10px 15px; }
+.subscribe strong { font-size: 16px; }
+.form-subscribe { margin:8px 0; background:url(../images/background/subscribe_bg.png) no-repeat; width: 233px; height: 33px; }
+.form-subscribe label { display: none; }
+.form-subscribe label,
+.form-subscribe .input-box,
+.form-subscribe button.button { float:left; }
+.form-subscribe label { padding-top:2px; font-weight:bold; color:#555; }
+.form-subscribe .input-box { width:136px; margin:0 5px;  }
+.form-subscribe input.input-text { width:160px; padding: 10px 0 0 40px; background: none; border: none;}
+.form-subscribe button.button { position:relative; float: right; top: 10px;}
+.form-subscribe button.button span { text-indent: -9999px; height:13px;width: 12px; background: transparent url(../images/buttons/subscribe_btn.gif) no-repeat top left; line-height:13px; }
+.form-subscribe button.button span span { background: none !important; color: #444 !important; text-shadow: 0px 1px #fff !important; }
 
 /* Clears ================================================================================ */
 .clearer:after,.wired-home .promo:after,.footer .f-left:after,
