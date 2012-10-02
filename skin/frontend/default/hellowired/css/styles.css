@@ -30,6 +30,8 @@
 .product-description p {height: 50px; overflow: hidden;}
 .feature     {float:left;}
 .im 	     {height:500px; width:400px;}
+.brands img  {height: 100px;}
+.brands	     {float:left;}
 body          { background:#e0e0e0 ; font:12px/1.55 arial, helvetica, sans-serif; color:#444; text-align:center;  }
 
 img           { border:0; vertical-align:top; }
@@ -1669,7 +1671,7 @@ f/********** Product Prices > */
 .wired-home .subpromo .offers img { margin-right: 20px; float: left;white-space: pre-wrap; }
 
 .wired-home .featured-social { margin-top: 15px; }
-.subscribe {margin-top:50px; min-height: 110px;width: 330px; -moz-border-radius: 10px; -webkit-border-radius: 10px; float: right;background: #f4f4f4 url(../images/background/featured_product_bg.gif) repeat-x; padding: 10px 15px; }
+.subscribe { min-height: 110px;width: 330px; -moz-border-radius: 10px; -webkit-border-radius: 10px; float: right;background: #f4f4f4 url(../images/background/featured_product_bg.gif) repeat-x; padding: 10px 15px; }
 .subscribe strong { font-size: 16px; }
 .form-subscribe { margin:8px 0; background:url(../images/background/subscribe_bg.png) no-repeat; width: 233px; height: 33px; }
 .form-subscribe label { display: none; }

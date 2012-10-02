@@ -48,9 +48,9 @@ td#fancy_title_right { height: 32px; width: 15px; background: transparent url('.
 .active .pop_menu a { color: #fff; }
 .active .pop_toggle { z-index: 2000; position: absolute; top: 0; left: 0; background-image: url(../images/cart/arrow_up.png); }
 /* Easy Slider */
-#slider-wrapper { position: relative; float: left;  }
+#slider-wrapper { position: relative; float: right;  }
 #slider ul, #slider li,  #slider2 ul, #slider2 li { margin:0; padding:0; list-style:none; }
-#slider { width: 400px; height: 500px; }
+#slider { width: 400px; height: 655px; }
 #slider2 { margin-top:1em; }
 #slider li, #slider2 li { width: 674px; height: 328px; overflow:hidden; }
 #prevBtn, #nextBtn,  #slider1next, #slider1prev { display:block; width:30px; height:77px; position:absolute; left:-30px; top:71px; z-index:1000; }
